@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEATHWINGS - Coming Soon</title>
+    <meta name="description" content="Deathwings launching January 2026">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .logo {
+            letter-spacing: 0.1em;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-2xl w-full text-center">
+        <!-- Logo/Brand -->
+        <h1 class="logo text-5xl md:text-7xl lg:text-8xl mb-6 tracking-wider">
+            DEATHWINGS
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-gray-400 text-xl md:text-2xl mb-12">
+            Coming January 2026
+        </p>
+
+        <!-- Email Signup Form -->
+        <div class="max-w-md mx-auto">
+            <form class="flex flex-col sm:flex-row gap-3" onsubmit="handleSubmit(event)">
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    class="flex-1 px-6 py-4 bg-zinc-900 border border-zinc-800 rounded-lg focus:outline-none focus:border-white transition-colors text-white placeholder-gray-500"
+                />
+                <button
+                    type="submit"
+                    class="px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-colors whitespace-nowrap"
+                >
+                    Notify Me
+                </button>
+            </form>
+            <p id="message" class="mt-4 text-sm text-gray-500 min-h-[20px]"></p>
+        </div>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const message = document.getElementById('message');
+            message.textContent = 'Thanks for your interest! We\'ll notify you when we launch.';
+            message.className = 'mt-4 text-sm text-green-400 min-h-[20px]';
+            event.target.reset();
+
+            // Clear message after 5 seconds
+            setTimeout(() => {
+                message.textContent = '';
+                message.className = 'mt-4 text-sm text-gray-500 min-h-[20px]';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

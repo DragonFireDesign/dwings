@@ -1,13 +1,12 @@
 {
-  "name": "deathwings-v1",
+  "name": "deathwings",
   "version": "1.0.0",
-  "private": true,
+  "description": "Deathwings - Magazine-style landing page",
   "scripts": {
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify"
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
   }
 }

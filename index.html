@@ -516,6 +516,12 @@
             }
         });
     </script>
-
+    <!-- Static form for Netlify detection -->
+    <form name="deathwings-signup" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="form-name" />
+      <input type="email" name="email" />
+      <input type="text" name="firstname" />
+      <input name="bot-field" />
+    </form>
 </body>
 </html>

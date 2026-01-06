@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEATHWINGS - Issue 00 Preview Edition</title>
+        <!-- SEO Meta Tags -->
+<title>DEATHWINGS - Unleash What's Inside</title>
+<meta name="description" content="Society has an expiration date for passion. You don't. DEATHWINGS is a magazine-style lifestyle brand for those who refuse to let age dictate their intensity. Skateboarding. Metal. Action sports. Zero apologies.">
+<meta name="keywords" content="deathwings, action sports apparel, skateboarding lifestyle, metal culture, refuse to fade, age-defying brand, alternative lifestyle, extreme sports clothing">
+<meta name="author" content="DEATHWINGS">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wearedeathwings.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wearedeathwings.com/">
+<meta property="og:title" content="DEATHWINGS - Issue 00 Preview Edition">
+<meta property="og:description" content="Society has an expiration date for passion. You don't. Lifestyle brand for those who refuse to fade.">
+<meta property="og:image" content="https://wearedeathwings.com/social-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="DEATHWINGS">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://wearedeathwings.com/">
+<meta name="twitter:title" content="DEATHWINGS - Issue 00 Preview Edition">
+<meta name="twitter:description" content="Society has an expiration date for passion. You don't. Lifestyle brand for those who refuse to fade.">
+<meta name="twitter:image" content="https://wearedeathwings.com/social-share.jpg">
+<meta name="twitter:site" content="@wearedeathwings">
+<meta name="twitter:creator" content="@wearedeathwings">
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Deathwings" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#39FF14">
+
+<!-- Additional Meta -->
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="DEATHWINGS">
+    
+    <!-- Preconnect Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-green': '#39FF14',
+                        'charcoal': '#2D2D2D',
+                    },
+                    fontFamily: {
+                        'anton': ['Anton SC', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'courier': ['Courier Prime', 'Courier New', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Anton SC', sans-serif;
+            background: #1a1a1a;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .dashed-border {
+            border: 4px dashed #39FF14;
+        }
+        
+        /* Mobile-specific adjustments */
+        @media (max-width: 480px) {
+            /* Extra small button for iPhone SE and similar */
+            .launch-button {
+                width: 80px !important;
+                height: 80px !important;
+                border-width: 3px !important;
+            }
+            
+            .launch-button p {
+                font-size: 9px !important;
+                line-height: 1.2 !important;
+            }
+        }
+        
+        @media (min-width: 481px) and (max-width: 768px) {
+            .launch-button {
+                width: 100px !important;
+                height: 100px !important;
+                border-width: 4px !important;
+            }
+            
+            .launch-button p {
+                font-size: 11px !important;
+                line-height: 1.2 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#1a1a1a]">
+
+    <!-- MAGAZINE COVER CONTAINER -->
+    <div class="min-h-screen flex flex-col items-center justify-center py-8 px-4">
+        
+        <!-- Magazine Cover -->
+        <div class="relative w-full max-w-[1190px] aspect-[1190/1684] bg-white overflow-hidden">
+            
+            <!-- Background Image -->
+            <img src="cover-skate.jpg" alt="Deathwings Cover" class="absolute inset-0 w-full h-full object-cover grayscale">
+            
+            <!-- Text Overlays -->
+            <div class="absolute inset-0 z-10">
+                
+                <!-- Top: "UNLEASH WHAT'S INSIDE" -->
+                <div class="absolute top-[1%] sm:top-[3%] left-1/2 transform -translate-x-1/2 bg-black px-2 sm:px-8 py-1 sm:py-2">
+                    <p class="font-courier text-white text-[8px] sm:text-[18px] md:text-[20px] lg:text-[22px] uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
+                        UNLEASH WHAT'S INSIDE
+                    </p>
+                </div>
+                
+                <!-- DEATHWINGS Logo Masthead -->
+                <div class="absolute top-[8%] left-1/2 transform -translate-x-1/2 w-[85%]">
+                    <img src="logo.svg" alt="DEATHWINGS" class="w-full h-auto drop-shadow-[0_0_20px_rgba(0,0,0,0.9)]">
+                </div>
+                
+                <!-- Issue Info -->
+                <div class="absolute top-[25%] left-[5%] bg-black/80 px-3 sm:px-6 py-1 sm:py-2">
+                    <p class="font-courier text-white text-[9px] sm:text-[12px] md:text-[14px] uppercase tracking-wider">
+                        ISSUE 00 // PREVIEW EDITION // JANUARY 2026
+                    </p>
+                </div>
+                
+                <!-- "REFUSE TO FADE" -->
+                <div class="absolute top-[30%] sm:top-[32%] left-[5%] bg-black px-3 sm:px-6 py-1 sm:py-3">
+                    <p class="font-courier text-white text-[13px] sm:text-[20px] md:text-[24px] lg:text-[28px] uppercase tracking-wider">
+                        REFUSE TO FADE
+                    </p>
+                </div>
+                
+                <!-- Main Headline - Scattered Blocks -->
+                <!-- "SOCIETY HAS AN" -->
+                <div class="absolute top-[35%] sm:top-[38%] right-[5%] bg-black px-2 sm:px-6 py-1 sm:py-3 transform -rotate-1">
+                    <p class="font-courier text-white text-[13px] sm:text-[24px] md:text-[32px] lg:text-[38px] uppercase leading-tight">
+                        SOCIETY HAS AN
+                    </p>
+                </div>
+                
+                <!-- "EXPIRATION DATE" -->
+                <div class="absolute top-[41%] sm:top-[44%] right-[6%] bg-black px-2 sm:px-6 py-1 sm:py-3 transform rotate-2">
+                    <p class="font-courier text-white text-[13px] sm:text-[24px] md:text-[32px] lg:text-[38px] uppercase leading-tight">
+                        EXPIRATION DATE
+                    </p>
+                </div>
+                
+                <!-- "FOR PASSION" -->
+                <div class="absolute top-[47%] sm:top-[50%] right-[5%] bg-black px-2 sm:px-6 py-1 sm:py-3 transform -rotate-1">
+                    <p class="font-courier text-white text-[13px] sm:text-[24px] md:text-[32px] lg:text-[38px] uppercase leading-tight">
+                        FOR PASSION
+                    </p>
+                </div>
+                
+                <!-- "YOU DON'T" -->
+                <div class="absolute top-[53%] sm:top-[56%] right-[7%] bg-black px-2 sm:px-6 py-1 sm:py-3 transform rotate-1">
+                    <p class="font-courier text-neon-green text-[13px] sm:text-[24px] md:text-[32px] lg:text-[38px] uppercase leading-tight">
+                        YOU DON'T
+                    </p>
+                </div>
+                
+                <!-- Bottom Left: Product List - Scattered -->
+                <!-- "NEW DROP" -->
+                <div class="absolute bottom-[42%] sm:bottom-[32%] left-[5%] bg-black px-3 sm:px-6 py-2 sm:py-3 transform rotate-2">
+                    <p class="font-courier text-neon-green text-[18px] sm:text-[24px] md:text-[30px] lg:text-[36px] uppercase font-bold">
+                        NEW DROP
+                    </p>
+                </div>
+                
+                <!-- "THE FACELESS ONE" -->
+                <div class="absolute bottom-[36%] sm:bottom-[27%] left-[6%] bg-black px-3 sm:px-6 py-1 sm:py-2 transform -rotate-1">
+                    <p class="font-courier text-white text-[12px] sm:text-[18px] md:text-[22px] lg:text-[24px] uppercase">
+                        THE FACELESS ONE
+                    </p>
+                </div>
+                
+                <!-- "SCREAMER" -->
+                <div class="absolute bottom-[31%] sm:bottom-[23%] left-[5.5%] bg-black px-3 sm:px-6 py-1 sm:py-2">
+                    <p class="font-courier text-white text-[12px] sm:text-[18px] md:text-[22px] lg:text-[24px] uppercase">
+                        SCREAMER
+                    </p>
+                </div>
+                
+                <!-- "STICKERS" -->
+                <div class="absolute bottom-[26%] sm:bottom-[19%] left-[6%] bg-black px-3 sm:px-6 py-1 sm:py-2 transform rotate-1">
+                    <p class="font-courier text-white text-[12px] sm:text-[18px] md:text-[22px] lg:text-[24px] uppercase">
+                        STICKERS
+                    </p>
+                </div>
+                
+                <!-- Bottom Right: Circular Launch Button -->
+                <div class="absolute bottom-[21.5%] sm:bottom-[12%] right-[5%]">
+                    <button 
+                        onclick="openModal()"
+                        class="launch-button w-[200px] h-[200px] md:w-[240px] md:h-[240px] lg:w-[280px] lg:h-[280px] rounded-full bg-white border-8 border-neon-green flex items-center justify-center hover:bg-neon-green hover:border-white transition-all duration-300 cursor-pointer group"
+                    >
+                        <p class="font-courier text-black group-hover:text-white text-[20px] md:text-[24px] lg:text-[28px] uppercase text-center leading-tight transition-colors">
+                            FULL EDITION<br>
+                            DROPS<br>
+                            JAN 15TH
+                        </p>
+                    </button>
+                </div>
+                
+                <!-- Bottom Left: Barcode -->
+                <div class="absolute bottom-[3%] left-[5%] bg-white px-2 sm:px-3 py-1 sm:py-2">
+                    <div class="flex gap-[1px] mb-1">
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[1px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[1px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[1px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[1px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[2px] sm:w-[3px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                        <div class="w-[1px] h-[26px] sm:h-[35px] bg-black"></div>
+                        <div class="w-[1.5px] sm:w-[2px] h-[30px] sm:h-[40px] bg-black"></div>
+                    </div>
+                    <p class="font-courier text-[8px] sm:text-[9px] text-black tracking-wider">9 780981 072463</p>
+                </div>
+                
+                <!-- Bottom Right: Price -->
+                <div class="absolute bottom-[3%] right-[5%]">
+                    <p class="font-courier text-white text-[10px] sm:text-[12px] md:text-[14px] uppercase">
+                        $00 // JANUARY 2026
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-[#1a1a1a] py-6 px-4">
+        <div class="max-w-[1190px] mx-auto">
+            
+            <div class="text-center space-y-3">
+                
+                <!-- Social Links -->
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.instagram.com/wearedeathwings/" target="_blank" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+                        Instagram
+                    </a>
+                    <a href="https://www.facebook.com/wearedeathwings/" target="_blank" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+                        Facebook
+                    </a>
+                    <a href="https://x.com/wearedeathwings" target="_blank" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+                        X
+                    </a>
+                    <a href="https://www.tiktok.com/@wearedeathwings" target="_blank" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+                        TikTok
+                    </a>
+                </div>
+                
+                <!-- Legal Links -->
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="privacy.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">
+                        Privacy Policy
+                    </a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="terms.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">
+                        Terms of Service
+                    </a>
+                </div>
+                
+                <!-- Copyright -->
+                <div>
+                    <p class="font-inter text-gray-600 text-[10px] md:text-[11px] tracking-wide">
+                        © 2025 DEATHWINGS. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Email Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="max-w-[600px] w-full mx-4">
+            
+            <!-- Close Button -->
+            <div class="flex justify-end mb-4">
+                <button onclick="closeModal()" class="text-white hover:text-neon-green text-[40px] font-anton leading-none">&times;</button>
+            </div>
+            
+            <!-- Modal Content -->
+            <div class="dashed-border p-8 md:p-12 bg-charcoal relative">
+                
+                <div class="text-center mb-8">
+                    <h2 class="font-anton uppercase text-neon-green text-[32px] md:text-[40px] lg:text-[48px] leading-[0.9] mb-4">
+                        RESERVE YOUR COPY
+                    </h2>
+                    <p class="font-inter text-white text-[14px] md:text-[16px]">
+                        First to know when Issue 01 drops. Zero&nbsp;spam.
+                    </p>
+                </div>
+
+                <form name="deathwings-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4 border-4 border-neon-green p-6 bg-charcoal" onsubmit="return handleSubmit(event)">
+                    
+                    <!-- Hidden fields for Netlify -->
+                    <input type="hidden" name="form-name" value="deathwings-signup" />
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    
+                    <div>
+                        <label class="font-courier uppercase text-white text-[12px] mb-2 block tracking-widest">
+                            EMAIL ADDRESS:
+                        </label>
+                        <input 
+                            type="email"
+                            name="email"
+                            placeholder="YOUR.EMAIL@EXAMPLE.COM" 
+                            class="w-full px-4 py-3 bg-charcoal border-2 border-white text-white placeholder-gray-500 font-courier text-[13px] uppercase focus:outline-none focus:border-neon-green transition-colors"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label class="font-courier uppercase text-white text-[12px] mb-2 block tracking-widest">
+                            FIRST NAME (OPTIONAL):
+                        </label>
+                        <input 
+                            type="text"
+                            name="firstname"
+                            placeholder="YOUR NAME HERE" 
+                            class="w-full px-4 py-3 bg-charcoal border-2 border-white text-white placeholder-gray-500 font-courier text-[13px] uppercase focus:outline-none focus:border-neon-green transition-colors"
+                        >
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full bg-neon-green text-charcoal font-anton uppercase text-[20px] md:text-[24px] py-4 md:py-5 border-4 border-neon-green hover:bg-charcoal hover:text-neon-green transition-colors duration-200"
+                    >
+                        SEND IT
+                    </button>
+
+                    <p class="font-courier text-white/70 text-[9px] text-center pt-2">
+                        BY SUBMITTING YOU AGREE TO OUR TERMS. MUST BE 18+. UNSUBSCRIBE ANYTIME.
+                    </p>
+
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="max-w-[600px] w-full mx-4">
+            
+            <!-- Close Button -->
+            <div class="flex justify-end mb-4">
+                <button onclick="closeSuccessModal()" class="text-white hover:text-neon-green text-[40px] font-anton leading-none">&times;</button>
+            </div>
+            
+            <!-- Success Content -->
+            <div class="dashed-border p-8 md:p-12 bg-charcoal relative text-center">
+                
+                <h2 class="font-anton uppercase text-neon-green text-[40px] md:text-[56px] lg:text-[64px] leading-[0.9] mb-6">
+                    YOU'RE IN
+                </h2>
+                
+                <p class="font-inter text-white text-[16px] md:text-[18px] mb-6">
+                    Issue 01 drops January 15th. Check your inbox.
+                </p>
+                
+                <button 
+                    onclick="closeSuccessModal()" 
+                    class="bg-neon-green text-charcoal font-anton uppercase text-[20px] md:text-[24px] px-8 py-4 border-4 border-neon-green hover:bg-charcoal hover:text-neon-green transition-colors duration-200"
+                >
+                    CLOSE
+                </button>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('signupModal').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('signupModal').classList.remove('active');
+        }
+        
+        function openSuccessModal() {
+            document.getElementById('successModal').classList.add('active');
+        }
+        
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.remove('active');
+        }
+        
+        // Handle form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                // Close signup modal
+                closeModal();
+                // Show success modal
+                setTimeout(() => {
+                    openSuccessModal();
+                }, 300);
+                // Reset form
+                form.reset();
+            })
+            .catch((error) => {
+                alert('Error submitting form. Please try again.');
+            });
+            
+            return false;
+        }
+        
+        // Open modal after 5 seconds
+        setTimeout(() => {
+            openModal();
+        }, 5000);
+        
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeSuccessModal();
+            }
+        });
+        
+        // Close if clicking outside modal content
+        document.getElementById('signupModal').addEventListener('click', (e) => {
+            if (e.target.id === 'signupModal') {
+                closeModal();
+            }
+        });
+        
+        document.getElementById('successModal').addEventListener('click', (e) => {
+            if (e.target.id === 'successModal') {
+                closeSuccessModal();
+            }
+        });
+    </script>
+
+</body>
+</html>

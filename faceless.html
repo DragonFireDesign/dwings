@@ -14,22 +14,21 @@
     </head>
     <body style="background: white;">
         <!-- NAVIGATION -->
-        <!-- NAVIGATION -->
         <nav class="bg-black">
             <div class="max-w-[1400px] mx-auto px-6 py-4">
                 <!-- Desktop & Mobile Header -->
                 <div class="flex items-center justify-between">
                     <!-- Logo -->
                     <a href="/" class="transition-opacity hover:opacity-80"> <img src="assets/images/logo.svg" alt="Deathwings" class="h-[40px] md:h-[48px] w-auto"> </a>
-                    <!-- Desktop Navigation (hidden on mobile) -->
-                    <div class="hidden md:flex gap-4 md:gap-8 items-center">
-                        <a href="/" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
-                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
-                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
-                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                    <!-- Desktop Navigation (hidden until large screens - 1024px+) -->
+                    <div class="hidden lg:flex gap-4 lg:gap-8 items-center">
+                        <a href="/" class="font-courier uppercase text-white text-[12px] lg:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
+                        <span class="text-white/30 text-[12px] lg:text-[14px]">//</span>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] lg:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
+                        <span class="text-white/30 text-[12px] lg:text-[14px]">//</span>
                         <!-- CATALOG DROPDOWN (Desktop) -->
                         <div class="relative group">
-                            <a href="/catalog.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
+                            <a href="/catalog.html" class="font-courier uppercase text-white text-[12px] lg:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
                         CATALOG <span class="text-[10px]">▼</span> </a>
                             <!-- Dropdown Menu -->
                             <div class="absolute left-0 top-full mt-2 bg-black border-2 border-neon-green opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
@@ -39,39 +38,37 @@
                             THE UNLEASHED </a>
                             </div>
                         </div>
-                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
-                        <a href="/order.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
-                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
-                        <a href="/contact.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
+                        <span class="text-white/30 text-[12px] lg:text-[14px]">//</span>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[12px] lg:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
+                        <span class="text-white/30 text-[12px] lg:text-[14px]">//</span>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[12px] lg:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
                     </div>
-                    <!-- Mobile Menu Button (visible on mobile only) -->
-                    <button id="mobile-menu-button" class="md:hidden text-neon-green hover:text-white transition-colors">
+                    <!-- Mobile Menu Button (visible on phones and tablets, hidden on large screens) -->
+                    <button id="mobile-menu-button" class="lg:hidden text-neon-green hover:text-white transition-colors">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
-                <!-- Mobile Navigation Menu (hidden by default) -->
-                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                <!-- Mobile Navigation Menu (hidden by default, shows on phones and tablets) -->
+                <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-gray-800">
                     <div class="flex flex-col space-y-4 pt-4">
                         <a href="/" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
                     HOME </a>
                         <a href="/about.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
                     ABOUT </a>
-                        <!-- Mobile Catalog -->
+                        <!-- Mobile Catalog with Submenu -->
                         <div>
-                            <a href="/catalog.html" class="block font-courier uppercase text-white text-[14px] tracking-wider hover:text-white transition-colors">
-    CATALOG </a>
-                            <button id="mobile-catalog-button" class="mt-2 font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors flex items-center gap-2 w-full text-left">
-                                VIEW PRODUCTS
+                            <button id="mobile-catalog-button" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-2 w-full text-left">
+                                CATALOG
                                 <span class="text-[10px]">▼</span>
                             </button>
-                            <!-- Mobile Submenu -->
+                            <!-- Mobile Submenu (hidden by default) -->
                             <div id="mobile-catalog-submenu" class="hidden ml-4 mt-2 space-y-2 border-l-2 border-neon-green pl-4">
                                 <a href="/faceless.html" class="block font-courier uppercase text-neon-green text-[12px] tracking-wider hover:text-neon-green transition-colors">
-      THE FACELESS </a>
+                            THE FACELESS </a>
                                 <a href="/unleashed.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
-      THE UNLEASHED </a>
+                            THE UNLEASHED </a>
                             </div>
                         </div>
                         <a href="/order.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">

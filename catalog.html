@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catalog - DEATHWINGS Founding Drop</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Tailwind + Custom CSS -->
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <link href="custom.css" rel="stylesheet" type="text/css">
+    </head>
+    <body style="background: white;">
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <nav class="bg-black">
+            <div class="max-w-[1400px] mx-auto px-6 py-4">
+                <!-- Desktop & Mobile Header -->
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <a href="/" class="transition-opacity hover:opacity-80"> <img src="assets/images/logo.svg" alt="Deathwings" class="h-[40px] md:h-[48px] w-auto"> </a>
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="hidden md:flex gap-4 md:gap-8 items-center">
+                        <a href="/" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <!-- CATALOG DROPDOWN (Desktop) -->
+                        <div class="relative group">
+                            <a href="/catalog.html" class="font-courier uppercase text-neon-green text-[12px] md:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
+                        CATALOG <span class="text-[10px]">▼</span> </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute left-0 top-full mt-2 bg-black border-2 border-neon-green opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+                                <a href="/faceless.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors border-b border-neon-green/30">
+                            THE FACELESS </a>
+                                <a href="/unleashed.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors">
+                            THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
+                    </div>
+                    <!-- Mobile Menu Button (visible on mobile only) -->
+                    <button id="mobile-menu-button" class="md:hidden text-neon-green hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Navigation Menu (hidden by default) -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="/" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    HOME </a>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ABOUT </a>
+                        <!-- Mobile Catalog -->
+                        <div>
+                            <a href="/catalog.html" class="block font-courier uppercase text-neon-green text-[14px] tracking-wider hover:text-white transition-colors">
+    CATALOG </a>
+                            <button id="mobile-catalog-button" class="mt-2 font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors flex items-center gap-2 w-full text-left">
+                                VIEW PRODUCTS
+                                <span class="text-[10px]">▼</span>
+                            </button>
+                            <!-- Mobile Submenu -->
+                            <div id="mobile-catalog-submenu" class="hidden ml-4 mt-2 space-y-2 border-l-2 border-neon-green pl-4">
+                                <a href="/faceless.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE FACELESS </a>
+                                <a href="/unleashed.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ORDER </a>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    CONTACT </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- MAIN CONTENT - BLUE BACKGROUND -->
+        <!-- MAIN CONTENT - BLUE CONTAINER ON WHITE BACKGROUND -->
+        <main class="max-w-[1200px] mx-auto" style="background: #2A6FBF;">
+            <header class="text-center py-12 px-6">
+                <h1 class="font-anton uppercase text-black text-[32px] md:text-[48px] leading-tight">
+                DEATHWINGS FOUNDING DROP // ISSUE 01 </h1>
+            </header>
+            <div class="max-w-[1200px] mx-auto px-6">
+                <!-- PREMIUM TEES SECTION -->
+                <section class="mb-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                        <!-- THE FACELESS TEE -->
+                        <div class="text-center">
+                            <h2 class="font-courier uppercase text-[12px] tracking-wider text-black mb-6">
+                            THE FACELESS PREMIUM TEE </h2>
+                            <div class="bg-transparent p-4 mb-4">
+                                <img src="assets/images/faceless-tee-catalog.png" alt="The Faceless One Premium Tee" class="w-full h-auto">
+                            </div>
+                            <div class="flex gap-4 justify-center">
+                                <a href="/faceless.html" class="bg-black text-neon-green font-anton uppercase text-[11px] md:text-[12px] px-6 py-3 border-2 border-black hover:bg-neon-green hover:text-black transition-colors">
+                                SEE PRODUCT </a>
+                                <a href="/order.html" class="bg-neon-green text-black font-anton uppercase text-[11px] md:text-[12px] px-6 py-3 border-2 border-neon-green hover:bg-black hover:text-neon-green transition-colors">
+                                ORDER NOW </a>
+                            </div>
+                        </div>
+                        <!-- THE UNLEASHED TEE -->
+                        <div class="text-center">
+                            <h2 class="font-courier uppercase text-[12px] tracking-wider text-black mb-6">
+                            THE UNLEASHED PREMIUM TEE </h2>
+                            <div class="bg-transparent p-4 mb-4">
+                                <img src="assets/images/unleashed-tee-catalog.png" alt="The Unleashed Premium Tee" class="w-full h-auto">
+                            </div>
+                            <div class="flex gap-4 justify-center">
+                                <a href="/unleashed.html" class="bg-black text-neon-green font-anton uppercase text-[11px] md:text-[12px] px-6 py-3 border-2 border-black hover:bg-neon-green hover:text-black transition-colors">
+                                SEE PRODUCT </a>
+                                <a href="/order.html" class="bg-neon-green text-black font-anton uppercase text-[11px] md:text-[12px] px-6 py-3 border-2 border-neon-green hover:bg-black hover:text-neon-green transition-colors">
+                                ORDER NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- STICKERS SECTION -->
+                <section class="mb-16 py-12">
+                    <h2 class="font-anton uppercase text-[36px] md:text-[48px] text-black mb-12 text-center">
+                    STICKERS </h2>
+                    <!-- Mobile Sticker Layout (stacked) -->
+                    <div class="flex flex-col items-center gap-8 md:hidden mb-8">
+                        <div class="text-center w-full max-w-[260px]">
+                            <img src="assets/images/sticker-faceless.png" alt="Faceless One Sticker" class="w-full h-auto mx-auto mb-3">
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">THE FACELESS<br>STICKER</p>
+                        </div>
+                        <div class="text-center w-full max-w-[260px]">
+                            <img src="assets/images/sigil.webp" alt="Deathwings Sigil Sticker" class="w-full h-auto mx-auto mb-3">
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">DEATHWINGS SIGIL<br>STICKER</p>
+                        </div>
+                        <div class="text-center w-full max-w-[260px]">
+                            <img src="assets/images/sticker-mascot.png" alt="Deathwings Mascot Sticker" class="w-full h-auto mx-auto mb-3">
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">DEATHWINGS MASCOT<br>STICKER</p>
+                        </div>
+                        <div class="text-center w-full max-w-[260px]">
+                            <img src="assets/images/sticker-unleashed.png" alt="The Unleashed Sticker" class="w-full h-auto mx-auto mb-3">
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">THE UNLEASHED<br>STICKER</p>
+                        </div>
+                    </div>
+                    <!-- Desktop Sticker Layout (scattered) -->
+                    <div class="hidden md:block relative max-w-[900px] mx-auto h-[600px] mb-8">
+                        <!-- THE FACELESS ONE STICKER (Left) -->
+                        <div class="absolute left-[8%] top-[15%] text-center w-[25%]">
+                            <div class="bg-transparent mb-3">
+                                <img src="assets/images/sticker-faceless.png" alt="Faceless One Sticker" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">THE FACELESS<br>STICKER</p>
+                        </div>
+                        <!-- DEATHWINGS SIGIL STICKER (Center Top) -->
+                        <div class="absolute left-[50%] translate-x-[-50%] top-[8%] text-center w-[20%]">
+                            <div class="bg-transparent mb-3">
+                                <img src="assets/images/sigil.webp" alt="Deathwings Sigil Sticker" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">DEATHWINGS SIGIL<br>STICKER</p>
+                        </div>
+                        <!-- DEATHWINGS MASCOT STICKER (Center) -->
+                        <div class="absolute left-[50%] translate-x-[-50%] top-[45%] text-center w-[22%]">
+                            <div class="bg-transparent mb-3">
+                                <img src="assets/images/sticker-mascot.png" alt="Deathwings Mascot Sticker" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">DEATHWINGS MASCOT<br>STICKER</p>
+                        </div>
+                        <!-- THE UNLEASHED STICKER (Right) -->
+                        <div class="absolute right-[8%] top-[20%] text-center w-[25%]">
+                            <div class="bg-transparent mb-3">
+                                <img src="assets/images/sticker-unleashed.png" alt="The Unleashed Sticker" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">THE UNLEASHED<br>STICKER</p>
+                        </div>
+                    </div>
+                    <!-- SINGLE ORDER NOW BUTTON -->
+                    <div class="text-center">
+                        <a href="/order.html" class="inline-block bg-neon-green text-black font-anton uppercase text-[16px] md:text-[20px] px-12 py-4 border-2 border-neon-green hover:bg-black hover:text-neon-green transition-colors">
+                        ORDER NOW </a>
+                    </div>
+                </section>
+                <!-- BUNDLES SECTION -->
+                <section class="mb-16">
+                    <h2 class="font-anton uppercase text-[36px] md:text-[48px] text-black mb-4 text-center">
+                    BUNDLES </h2>
+                    <p class="font-courier uppercase text-[12px] tracking-wider text-black mb-8 text-center">
+                    Save when you bundle tee + sticker </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                        <!-- THE FACELESS ONE BUNDLE -->
+                        <div class="text-center">
+                            <div class="bg-transparent p-4 mb-4">
+                                <img src="assets/images/bundle-faceless.png" alt="The Faceless One Bundle" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">Premium Tee + THE Faceless Sticker</p>
+                        </div>
+                        <!-- THE UNLEASHED BUNDLE -->
+                        <div class="text-center">
+                            <div class="bg-transparent p-4 mb-4">
+                                <img src="assets/images/bundle-unleashed.png" alt="The Unleashed Bundle" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">
+                            Premium Tee + Unleashed Sticker </p>
+                        </div>
+                        <!-- DROP 01 STICKERS BUNDLE -->
+                        <div class="text-center">
+                            <div class="bg-transparent p-4 mb-4">
+                                <img src="assets/images/bundle-stickers.png" alt="Drop 01 Stickers Bundle" class="w-full h-auto">
+                            </div>
+                            <p class="font-courier uppercase text-[10px] tracking-wide text-black">
+                            All Four Sticker Designs </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- FINAL CTA -->
+                <section class="text-center py-12">
+                    <a href="/order.html" class="inline-block bg-neon-green text-black font-anton uppercase text-[20px] md:text-[24px] px-16 py-5 border-4 border-neon-green hover:bg-black hover:text-neon-green transition-colors">
+                    VIEW ORDER FORM </a>
+                </section>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="w-full bg-[#1a1a1a] py-8 px-4 border-t border-gray-800">
+            <div class="max-w-[1190px] mx-auto text-center space-y-4">
+                <div class="mb-6">
+                    <p class="font-courier text-gray-500 text-[11px] uppercase tracking-widest">
+        Published by Deathwings </p>
+                    <p class="font-courier text-gray-600 text-[10px] uppercase tracking-wider mt-1">
+        Issue 01 // February 2026 </p>
+                </div>
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.instagram.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Instagram </a>
+                    <a href="https://www.facebook.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Facebook </a>
+                    <a href="https://x.com/wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        X </a>
+                    <a href="https://www.tiktok.com/@wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        TikTok </a>
+                </div>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="/privacy-policy.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Privacy Policy</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/terms-and-conditions.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Terms of Service</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/returns-and-refunds.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Returns</a>
+                </div>
+                <div>
+                    <p class="font-inter text-gray-600 text-[10px] md:text-[11px] tracking-wide">
+        © 2026 DEATHWINGS. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Mobile Menu JavaScript (complete) -->
+        <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileCatalogButton = document.getElementById('mobile-catalog-button');
+  const mobileCatalogSubmenu = document.getElementById('mobile-catalog-submenu');
+
+  function closeMobileMenu() {
+    if (mobileMenu) mobileMenu.classList.add('hidden');
+    if (mobileCatalogSubmenu) mobileCatalogSubmenu.classList.add('hidden');
+  }
+
+  // Toggle main mobile menu
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      const willOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+
+      // If closing the main menu, also close the submenu
+      if (!willOpen) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Toggle catalog submenu on mobile
+  if (mobileCatalogButton && mobileCatalogSubmenu) {
+    mobileCatalogButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Only toggle submenu if main menu is open
+      if (mobileMenu && mobileMenu.classList.contains('hidden')) return;
+
+      mobileCatalogSubmenu.classList.toggle('hidden');
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenuButton || !mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) return;
+
+    const isClickInside =
+      mobileMenuButton.contains(event.target) ||
+      mobileMenu.contains(event.target);
+
+    if (!isClickInside) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu after clicking any mobile nav link
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+</script>
+    </body>
+</html>

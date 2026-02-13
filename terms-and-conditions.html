@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO Meta Tags -->
+        <title>Terms and Conditions - DEATHWINGS</title>
+        <meta name="description" content="Terms and Conditions for purchasing from DEATHWINGS. UK consumer law compliant.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://wearedeathwings.com/terms-and-conditions.html">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://wearedeathwings.com/terms-and-conditions.html">
+        <meta property="og:title" content="Terms and Conditions - DEATHWINGS">
+        <meta property="og:description" content="Terms and Conditions for purchasing from DEATHWINGS.">
+        <meta property="og:site_name" content="DEATHWINGS">
+        <meta property="og:image" content="https://wearedeathwings.com/social-share.jpg">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#39FF14">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Tailwind CSS -->
+        <link href="custom.css" rel="stylesheet" type="text/css">
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav class="bg-black">
+            <div class="max-w-[1400px] mx-auto px-6 py-4">
+                <!-- Desktop & Mobile Header -->
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <a href="/" class="transition-opacity hover:opacity-80"> <img src="assets/images/logo.svg" alt="Deathwings" class="h-[40px] md:h-[48px] w-auto"> </a>
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="hidden md:flex gap-4 md:gap-8 items-center">
+                        <a href="/" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <!-- CATALOG DROPDOWN (Desktop) -->
+                        <div class="relative group">
+                            <a href="/catalog.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
+                        CATALOG <span class="text-[10px]">▼</span> </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute left-0 top-full mt-2 bg-black border-2 border-neon-green opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+                                <a href="/faceless.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors border-b border-neon-green/30">
+                            THE FACELESS </a>
+                                <a href="/unleashed.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors">
+                            THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
+                    </div>
+                    <!-- Mobile Menu Button (visible on mobile only) -->
+                    <button id="mobile-menu-button" class="md:hidden text-neon-green hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Navigation Menu (hidden by default) -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="/" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    HOME </a>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ABOUT </a>
+                        <!-- Mobile Catalog -->
+                        <div>
+                            <a href="/catalog.html" class="block font-courier uppercase text-white text-[14px] tracking-wider hover:text-white transition-colors">
+    CATALOG </a>
+                            <button id="mobile-catalog-button" class="mt-2 font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors flex items-center gap-2 w-full text-left">
+                                VIEW PRODUCTS
+                                <span class="text-[10px]">▼</span>
+                            </button>
+                            <!-- Mobile Submenu -->
+                            <div id="mobile-catalog-submenu" class="hidden ml-4 mt-2 space-y-2 border-l-2 border-neon-green pl-4">
+                                <a href="/faceless.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE FACELESS </a>
+                                <a href="/unleashed.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ORDER </a>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    CONTACT </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- MAIN CONTENT -->
+        <main class="max-w-[900px] mx-auto px-6 py-16 md:py-24">
+            <article class="bg-white p-8 md:p-16 shadow-sm">
+                <header class="mb-12 border-b-2 border-gray-200 pb-8">
+                    <p class="font-courier uppercase text-[10px] tracking-widest text-gray-500 mb-4">
+                    DEATHWINGS // LEGAL </p>
+                    <h1 class="font-anton uppercase text-[48px] md:text-[56px] leading-[0.9] text-black mb-4">
+                    TERMS AND<br>CONDITIONS </h1>
+                    <p class="font-courier text-[12px] text-gray-600">
+                    Last updated: 5 February 2026 </p>
+                </header>
+                <div class="space-y-10 font-inter text-gray-800 leading-relaxed">
+                    <p class="text-[15px]">
+                    Please read these Terms and Conditions ("Terms") carefully before using wearedeathwings.com ("Website") or purchasing products from Definitive Ventures Group, trading as Deathwings ("we", "us", "our", "Deathwings"). </p>
+                    <p class="text-[15px]">
+                    By placing an order or using our Website, you agree to be bound by these Terms. </p>
+                    <!-- 1. Company Information -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">1. COMPANY INFORMATION</h2>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[14px]">
+                            <p class="mb-1"><span class="font-semibold text-black">Trading name:</span> Deathwings</p>
+                            <p class="mb-3"><span class="font-semibold text-black">Legal entity:</span> Definitive Ventures Group</p>
+                            <p class="mb-1"><span class="font-semibold text-black">Address:</span></p>
+                            <p class="ml-4 mb-1">43 Lyndhurst Drive</p>
+                            <p class="ml-4 mb-1">Kidderminster</p>
+                            <p class="ml-4 mb-1">Worcestershire</p>
+                            <p class="ml-4 mb-3">DY10 2PT, United Kingdom</p>
+                            <p class="mb-1"><span class="font-semibold text-black">Contact email:</span> hello@wearedeathwings.com</p>
+                            <p><span class="font-semibold text-black">Website:</span> wearedeathwings.com</p>
+                        </div>
+                    </section>
+                    <!-- 2. Pre-Order Information -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">2. PRE-ORDER INFORMATION</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">2.1 Pre-Order Period</h3>
+                        <p class="mb-4 text-[15px]">Products listed on our Website during the initial launch are available on a <span class="font-semibold text-black">pre-order basis</span>. This means:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Orders placed during the pre-order period (February 14 – March 17, 2026) will be manufactured after the pre-order period closes</li>
+                            <li>
+                                <span class="font-semibold text-black">Expected shipping:</span> Late March 2026
+                            </li>
+                            <li>We will notify you by email when your order ships, including tracking information</li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">2.2 Pre-Order Terms</h3>
+                        <ul class="list-disc list-inside space-y-2 text-[15px] ml-4">
+                            <li>Payment is taken at the time you place your pre-order</li>
+                            <li>Pre-orders are subject to our Returns and Refund Policy</li>
+                            <li>We reserve the right to cancel pre-orders and issue full refunds if production issues arise</li>
+                            <li>Estimated shipping dates are approximate and may be subject to change due to manufacturing or shipping delays</li>
+                        </ul>
+                    </section>
+                    <!-- 3. Products and Pricing -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">3. PRODUCTS AND PRICING</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">3.1 Product Descriptions</h3>
+                        <p class="mb-3 text-[15px]">We make every effort to display our products accurately, including colors, materials, and sizes. However:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Product colors may vary slightly due to screen settings</li>
+                            <li>Product images are for illustrative purposes</li>
+                            <li>Actual products may vary slightly from images</li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">3.2 Pricing</h3>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>All prices are displayed in <span class="font-semibold text-black">British Pounds (GBP)</span>
+                            </li>
+                            <li>Prices include VAT where applicable</li>
+                            <li>Prices do not include shipping costs (calculated at checkout)</li>
+                            <li>We reserve the right to change prices at any time, but price changes will not affect orders already placed</li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">3.3 Product Availability</h3>
+                        <ul class="list-disc list-inside space-y-2 text-[15px] ml-4">
+                            <li>Products are subject to availability</li>
+                            <li>If a product becomes unavailable after you place an order, we will notify you and offer a full refund</li>
+                        </ul>
+                    </section>
+                    <!-- 4. Ordering and Payment -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">4. ORDERING AND PAYMENT</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.1 Placing an Order</h3>
+                        <p class="mb-3 text-[15px]">When you place an order:</p>
+                        <ol class="list-decimal list-inside mb-4 space-y-2 text-[15px] ml-4">
+                            <li>You select products and add them to your cart</li>
+                            <li>You proceed to checkout and provide shipping and payment information</li>
+                            <li>You review your order and click "Place Order"</li>
+                            <li>You receive an email confirmation (this confirms we have received your order)</li>
+                        </ol>
+                        <p class="mb-6 text-[15px]"><span class="font-semibold text-black">Your order is a binding contract</span> once you receive email confirmation.</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.2 Payment</h3>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Payment is processed securely through Shopify Payments</li>
+                            <li>We accept major credit and debit cards</li>
+                            <li>Payment is taken immediately when you place your order</li>
+                            <li>All transactions are encrypted and secure (SSL/TLS)</li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.3 Order Acceptance</h3>
+                        <p class="mb-3 text-[15px]">We reserve the right to refuse or cancel any order for any reason, including but not limited to:</p>
+                        <ul class="list-disc list-inside mb-4 space-y-2 text-[15px] ml-4">
+                            <li>Product unavailability</li>
+                            <li>Pricing errors</li>
+                            <li>Suspected fraudulent activity</li>
+                        </ul>
+                        <p class="text-[15px]">If we cancel your order, we will issue a full refund.</p>
+                    </section>
+                    <!-- 5. Shipping and Delivery -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">5. SHIPPING AND DELIVERY</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">5.1 Shipping Area</h3>
+                        <p class="mb-6 text-[15px]">We currently ship to <span class="font-semibold text-black">United Kingdom addresses only</span>.</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">5.2 Shipping Costs</h3>
+                        <p class="mb-3 text-[15px]">Shipping costs are calculated at checkout based on your order total:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>
+                                <span class="font-semibold text-black">Orders under £15:</span> £2.49 (Large Letter, Royal Mail)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Orders £15 - £49.99:</span> £4.99 (1st Class Parcel, Royal Mail)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Orders £50 and over:</span> FREE SHIPPING
+                            </li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">5.3 Delivery Times</h3>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>
+                                <span class="font-semibold text-black">Pre-orders:</span> Expected to ship late March 2026
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Standard orders (after launch):</span> 3-5 business days from dispatch
+                            </li>
+                            <li>Delivery times are estimates and not guaranteed</li>
+                            <li>We are not responsible for delays caused by Royal Mail or other carriers</li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">5.4 Tracking</h3>
+                        <p class="mb-6 text-[15px]">You will receive a tracking number by email when your order ships.</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">5.5 Failed Delivery</h3>
+                        <p class="mb-3 text-[15px]">If delivery fails due to incorrect address or absence at delivery:</p>
+                        <ul class="list-disc list-inside space-y-2 text-[15px] ml-4">
+                            <li>The parcel will be returned to Royal Mail for collection or redelivery</li>
+                            <li>You are responsible for any additional delivery charges</li>
+                            <li>If the parcel is returned to us, we will contact you to arrange reshipment (additional charges may apply)</li>
+                        </ul>
+                    </section>
+                    <!-- 6. Returns and Refunds -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">6. RETURNS AND REFUNDS</h2>
+                        <p class="mb-4 text-[15px]">Please refer to our <a href="returns-and-refunds.html" class="text-neon-green underline hover:text-black transition-colors">Returns and Refund Policy</a> (separate page) for full details.</p>
+                        <p class="mb-3 text-[15px] font-semibold text-black">Summary:</p>
+                        <ul class="list-disc list-inside space-y-2 text-[15px] ml-4">
+                            <li>You have <span class="font-semibold text-black">14 days</span> from receipt to return unworn, unused items
+                            </li>
+                            <li>Returns must be authorized in advance by emailing returns@wearedeathwings.com</li>
+                            <li>You are responsible for return shipping costs (unless the item is faulty or incorrect)</li>
+                            <li>Refunds are processed within 5 business days of receiving your return</li>
+                        </ul>
+                    </section>
+                    <!-- 7. Consumer Rights -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">7. YOUR CONSUMER RIGHTS (UK LAW)</h2>
+                        <p class="mb-4 text-[15px]">Under the <span class="font-semibold text-black">Consumer Rights Act 2015</span>, you have the following rights:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Products must be as described, fit for purpose, and of satisfactory quality</li>
+                            <li>If products are faulty or not as described, you can request a repair, replacement, or refund</li>
+                            <li>You have <span class="font-semibold text-black">14 days</span> from receipt to cancel your order for any reason (Distance Selling Regulations)
+                            </li>
+                        </ul>
+                        <p class="text-[15px]">These statutory rights are not affected by these Terms.</p>
+                    </section>
+                    <!-- 8. Intellectual Property -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">8. INTELLECTUAL PROPERTY</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">8.1 Trademarks and Copyright</h3>
+                        <p class="mb-3 text-[15px]">All content on our Website, including:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Deathwings name and logo</li>
+                            <li>The Faceless One artwork</li>
+                            <li>Product designs and images</li>
+                            <li>Website design and text</li>
+                        </ul>
+                        <p class="mb-6 text-[15px]">...is owned by Definitive Ventures Group and protected by UK and international copyright and trademark laws.</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">8.2 Restrictions</h3>
+                        <p class="mb-3 text-[15px]">You may not:</p>
+                        <ul class="list-disc list-inside space-y-2 text-[15px] ml-4">
+                            <li>Copy, reproduce, or distribute our content without permission</li>
+                            <li>Use our trademarks or logos without written consent</li>
+                            <li>Modify or create derivative works from our designs</li>
+                        </ul>
+                    </section>
+                    <!-- 9. Limitation of Liability -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">9. LIMITATION OF LIABILITY</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">9.1 Our Liability</h3>
+                        <p class="mb-3 text-[15px] font-semibold text-black">We do not exclude or limit liability for:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Death or personal injury caused by our negligence</li>
+                            <li>Fraud or fraudulent misrepresentation</li>
+                            <li>Any liability that cannot be excluded under UK law</li>
+                        </ul>
+                        <p class="mb-3 text-[15px] font-semibold text-black">We are not liable for:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Indirect or consequential losses (e.g., loss of profits, business, or opportunity)</li>
+                            <li>Losses caused by your failure to provide accurate shipping information</li>
+                            <li>Delays or failures caused by third parties (e.g., Royal Mail, payment processors)</li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">9.2 Maximum Liability</h3>
+                        <p class="text-[15px]">Our total liability to you for any claim arising from your order is limited to the total amount you paid for that order.</p>
+                    </section>
+                    <!-- 10. Privacy -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">10. PRIVACY AND DATA PROTECTION</h2>
+                        <p class="text-[15px]">We process your personal information in accordance with our <a href="privacy-policy.html" class="text-neon-green underline hover:text-black transition-colors">Privacy Policy</a> and UK GDPR. Please read our Privacy Policy for full details on how we collect, use, and protect your data.</p>
+                    </section>
+                    <!-- 11. Changes to Terms -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">11. CHANGES TO TERMS</h2>
+                        <p class="text-[15px]">We may update these Terms from time to time. The "Last updated" date at the top will reflect changes. Continued use of our Website or placing new orders after changes constitutes acceptance of the updated Terms.</p>
+                    </section>
+                    <!-- 12. Governing Law -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">12. GOVERNING LAW AND JURISDICTION</h2>
+                        <p class="mb-4 text-[15px]">These Terms are governed by the laws of <span class="font-semibold text-black">England and Wales</span>.</p>
+                        <p class="text-[15px]">Any disputes arising from these Terms or your order will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+                    </section>
+                    <!-- 13. Severability -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">13. SEVERABILITY</h2>
+                        <p class="text-[15px]">If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will continue in full force and effect.</p>
+                    </section>
+                    <!-- 14. Entire Agreement -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">14. ENTIRE AGREEMENT</h2>
+                        <p class="text-[15px]">These Terms, together with our Privacy Policy and Returns Policy, constitute the entire agreement between you and Deathwings regarding your use of our Website and purchase of products.</p>
+                    </section>
+                    <!-- 15. Contact -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">15. CONTACT US</h2>
+                        <p class="mb-4 text-[15px]">If you have any questions about these Terms, please contact us:</p>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[14px]">
+                            <p class="mb-2"><span class="font-semibold text-black">Email:</span> hello@wearedeathwings.com</p>
+                            <p class="mb-1"><span class="font-semibold text-black">Address:</span></p>
+                            <p class="ml-4 mb-1">Definitive Ventures Group</p>
+                            <p class="ml-4 mb-1">43 Lyndhurst Drive</p>
+                            <p class="ml-4 mb-1">Kidderminster</p>
+                            <p class="ml-4 mb-1">Worcestershire</p>
+                            <p class="ml-4 mb-1">DY10 2PT</p>
+                            <p class="ml-4">United Kingdom</p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <!-- FOOTER -->
+        <footer class="w-full bg-[#1a1a1a] py-8 px-4 border-t border-gray-800">
+            <div class="max-w-[1190px] mx-auto text-center space-y-4">
+                <div class="mb-6">
+                    <p class="font-courier text-gray-500 text-[11px] uppercase tracking-widest">
+        Published by Deathwings </p>
+                    <p class="font-courier text-gray-600 text-[10px] uppercase tracking-wider mt-1">
+        Issue 01 // February 2026 </p>
+                </div>
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.instagram.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Instagram </a>
+                    <a href="https://www.facebook.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Facebook </a>
+                    <a href="https://x.com/wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        X </a>
+                    <a href="https://www.tiktok.com/@wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        TikTok </a>
+                </div>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="/privacy-policy.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Privacy Policy</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/terms-and-conditions.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Terms of Service</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/returns-and-refunds.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Returns</a>
+                </div>
+                <div>
+                    <p class="font-inter text-gray-600 text-[10px] md:text-[11px] tracking-wide">
+        © 2026 DEATHWINGS. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Mobile Menu JavaScript (complete) -->
+        <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileCatalogButton = document.getElementById('mobile-catalog-button');
+  const mobileCatalogSubmenu = document.getElementById('mobile-catalog-submenu');
+
+  function closeMobileMenu() {
+    if (mobileMenu) mobileMenu.classList.add('hidden');
+    if (mobileCatalogSubmenu) mobileCatalogSubmenu.classList.add('hidden');
+  }
+
+  // Toggle main mobile menu
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      const willOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+
+      // If closing the main menu, also close the submenu
+      if (!willOpen) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Toggle catalog submenu on mobile
+  if (mobileCatalogButton && mobileCatalogSubmenu) {
+    mobileCatalogButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Only toggle submenu if main menu is open
+      if (mobileMenu && mobileMenu.classList.contains('hidden')) return;
+
+      mobileCatalogSubmenu.classList.toggle('hidden');
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenuButton || !mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) return;
+
+    const isClickInside =
+      mobileMenuButton.contains(event.target) ||
+      mobileMenu.contains(event.target);
+
+    if (!isClickInside) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu after clicking any mobile nav link
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+</script>
+    </body>
+</html>

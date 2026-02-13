@@ -1,0 +1,256 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO Meta Tags -->
+        <title>Contact - DEATHWINGS</title>
+        <meta name="description" content="Get in touch with DEATHWINGS. No filters. No corporate speak. Just real conversation.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://wearedeathwings.com/contact.html">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://wearedeathwings.com/contact.html">
+        <meta property="og:title" content="Contact - DEATHWINGS">
+        <meta property="og:description" content="Get in touch with DEATHWINGS. No filters. No corporate speak. Just real conversation.">
+        <meta property="og:site_name" content="DEATHWINGS">
+        <meta property="og:image" content="https://wearedeathwings.com/social-share.jpg">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#39FF14">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <!-- Custom DEATHWINGS styles (your overrides) -->
+        <link href="custom.css" rel="stylesheet" type="text/css">
+    </head>     
+    <body> 
+        <!-- NAVIGATION -->
+        <nav class="bg-black">
+            <div class="max-w-[1400px] mx-auto px-6 py-4">
+                <!-- Desktop & Mobile Header -->
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <a href="/" class="transition-opacity hover:opacity-80"> <img src="assets/images/logo.svg" alt="Deathwings" class="h-[40px] md:h-[48px] w-auto"> </a>
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="hidden md:flex gap-4 md:gap-8 items-center">
+                        <a href="/" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <!-- CATALOG DROPDOWN (Desktop) -->
+                        <div class="relative group">
+                            <a href="/catalog.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
+                        CATALOG <span class="text-[10px]">▼</span> </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute left-0 top-full mt-2 bg-black border-2 border-neon-green opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+                                <a href="/faceless.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors border-b border-neon-green/30">
+                            THE FACELESS </a>
+                                <a href="/unleashed.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors">
+                            THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/contact.html" class="font-courier uppercase text-neon-green text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
+                    </div>
+                    <!-- Mobile Menu Button (visible on mobile only) -->
+                    <button id="mobile-menu-button" class="md:hidden text-neon-green hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Navigation Menu (hidden by default) -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="/" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    HOME </a>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ABOUT </a>
+                        <!-- Mobile Catalog -->
+                        <div>
+                            <a href="/catalog.html" class="block font-courier uppercase text-white text-[14px] tracking-wider hover:text-white transition-colors">
+    CATALOG </a>
+                            <button id="mobile-catalog-button" class="mt-2 font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors flex items-center gap-2 w-full text-left">
+                                VIEW PRODUCTS
+                                <span class="text-[10px]">▼</span>
+                            </button>
+                            <!-- Mobile Submenu -->
+                            <div id="mobile-catalog-submenu" class="hidden ml-4 mt-2 space-y-2 border-l-2 border-neon-green pl-4">
+                                <a href="/faceless.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE FACELESS </a>
+                                <a href="/unleashed.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ORDER </a>
+                        <a href="/contact.html" class="font-courier uppercase text-neon-green text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    CONTACT </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- MAIN CONTENT -->
+        <main class="max-w-[900px] mx-auto px-6 py-16 md:py-24">
+            <article class="bg-white p-8 md:p-16 shadow-sm">
+                <header class="mb-12 border-b-2 border-gray-200 pb-8">
+                    <p class="font-courier uppercase text-[10px] tracking-widest text-gray-500 mb-4">
+                    DEATHWINGS // ISSUE 01 </p>
+                    <h1 class="font-anton uppercase text-[48px] md:text-[64px] lg:text-[72px] leading-[0.9] text-black mb-6">
+                    LETTERS TO<br>THE EDITOR </h1>
+                    <p class="font-inter text-[16px] md:text-[18px] text-gray-700 leading-relaxed">
+                    No filters. No corporate speak. Just real conversation. </p>
+                </header>
+                <!-- CONTACT FORM -->
+                <form name="deathwings-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-8">
+                    <!-- Hidden fields for Netlify -->
+                    <input type="hidden" name="form-name" value="deathwings-contact"/>
+                    <p class="hidden"> <label>Don't fill this out if you're human: 
+                            <input name="bot-field"/>
+                        </label> </p>
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="font-courier uppercase text-[12px] tracking-wider text-gray-700 block mb-3">
+                            YOUR NAME
+</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border-2 border-gray-300 font-inter text-[15px] focus:border-neon-green focus:outline-none transition-colors">
+                    </div>
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="font-courier uppercase text-[12px] tracking-wider text-gray-700 block mb-3">
+                            EMAIL ADDRESS
+</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border-2 border-gray-300 font-inter text-[15px] focus:border-neon-green focus:outline-none transition-colors">
+                    </div>
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="font-courier uppercase text-[12px] tracking-wider text-gray-700 block mb-3">
+                            YOUR MESSAGE
+</label>
+                        <textarea id="message" name="message" rows="8" required class="w-full px-4 py-3 border-2 border-gray-300 font-inter text-[15px] leading-relaxed focus:border-neon-green focus:outline-none transition-colors resize-y"></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" class="bg-black text-neon-green font-anton uppercase text-[18px] md:text-[20px] px-10 py-4 border-2 border-black hover:bg-neon-green hover:text-black hover:border-neon-green transition-colors duration-200">
+                            SEND MESSAGE
+</button>
+                    </div>
+                    <!-- Form Note -->
+                    <div class="pt-4 border-t border-gray-200">
+                        <p class="font-inter text-[13px] text-gray-600 leading-relaxed">
+                        We read every message. Expect a response within 48 hours. </p>
+                    </div>
+                </form>
+            </article>
+        </main>
+        <footer class="w-full bg-[#1a1a1a] py-8 px-4 border-t border-gray-800">
+            <div class="max-w-[1190px] mx-auto text-center space-y-4">
+                <div class="mb-6">
+                    <p class="font-courier text-gray-500 text-[11px] uppercase tracking-widest">
+        Published by Deathwings </p>
+                    <p class="font-courier text-gray-600 text-[10px] uppercase tracking-wider mt-1">
+        Issue 01 // February 2026 </p>
+                </div>
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.instagram.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Instagram </a>
+                    <a href="https://www.facebook.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Facebook </a>
+                    <a href="https://x.com/wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        X </a>
+                    <a href="https://www.tiktok.com/@wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        TikTok </a>
+                </div>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="/privacy-policy.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Privacy Policy</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/terms-and-conditions.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Terms of Service</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/returns-and-refunds.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Returns</a>
+                </div>
+                <div>
+                    <p class="font-inter text-gray-600 text-[10px] md:text-[11px] tracking-wide">
+        © 2026 DEATHWINGS. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Mobile Menu JavaScript (complete) -->
+        <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileCatalogButton = document.getElementById('mobile-catalog-button');
+  const mobileCatalogSubmenu = document.getElementById('mobile-catalog-submenu');
+
+  function closeMobileMenu() {
+    if (mobileMenu) mobileMenu.classList.add('hidden');
+    if (mobileCatalogSubmenu) mobileCatalogSubmenu.classList.add('hidden');
+  }
+
+  // Toggle main mobile menu
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      const willOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+
+      // If closing the main menu, also close the submenu
+      if (!willOpen) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Toggle catalog submenu on mobile
+  if (mobileCatalogButton && mobileCatalogSubmenu) {
+    mobileCatalogButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Only toggle submenu if main menu is open
+      if (mobileMenu && mobileMenu.classList.contains('hidden')) return;
+
+      mobileCatalogSubmenu.classList.toggle('hidden');
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenuButton || !mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) return;
+
+    const isClickInside =
+      mobileMenuButton.contains(event.target) ||
+      mobileMenu.contains(event.target);
+
+    if (!isClickInside) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu after clicking any mobile nav link
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+</script>
+        <!-- Success/Error Messages (Optional - can be styled as modals) -->
+        <script>
+        // Form submission handling
+        const form = document.querySelector('form[name="deathwings-contact"]');
+        
+        form.addEventListener('submit', function(e) {
+            // Netlify handles the actual submission
+            // You can add custom success/error handling here if needed
+        });
+    </script>
+    </body>     
+</html>

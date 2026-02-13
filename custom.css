@@ -1,0 +1,105 @@
+/* DEATHWINGS CUSTOM STYLES */
+/* Custom Colors */
+:root {
+    --neon-green: #39FF14;
+    --charcoal: #2D2D2D;
+    --paper: #f5f5f0;
+    --paper-tan: #faf8f0;
+}
+
+/* Page-specific backgrounds */
+.bg-cover {
+    background-color: #1a1a1a;
+
+    /* Almost black - for cover/index page */
+}
+
+.bg-charcoal {
+    background-color: #2D2D2D;
+
+    /* Dark gray - for navigation/footers */
+}
+
+.bg-paper {
+    background-color: #f5f5f0;
+
+    /* Off-white - for interior pages */
+}
+
+.bg-paper-tan {
+    background-color: #faf8f0;
+
+    /* Warm off-white - for Faceless One ad */
+}
+
+/* Custom Utility Classes */
+.bg-neon-green {
+    background-color: var(--neon-green);
+}
+
+.hover\:bg-black:hover {
+    background-color: #000;
+}
+
+.text-neon-green {
+    color: var(--neon-green);
+}
+
+.bg-charcoal {
+    background-color: var(--charcoal);
+}
+
+.text-charcoal {
+    color: var(--charcoal);
+}
+
+.bg-paper {
+    background-color: var(--paper);
+}
+
+.bg-paper-tan {
+    background-color: var(--paper-tan);
+}
+
+.border-neon-green {
+    border-color: var(--neon-green);
+}
+
+.hover\:bg-neon-green:hover {
+    background-color: var(--neon-green);
+}
+
+.hover\:text-neon-green:hover {
+    color: var(--neon-green);
+}
+
+.hover\:text-black:hover {
+    color: #000;
+}
+
+.hover\:border-neon-green:hover {
+    border-color: var(--neon-green);
+}
+
+.focus\:border-neon-green:focus {
+    border-color: var(--neon-green);
+}
+
+/* Custom Font Classes */
+.font-anton {
+    font-family: 'Anton SC', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-courier {
+    font-family: 'Courier Prime', 'Courier New', monospace;
+}
+
+/* Body default background */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f0;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO Meta Tags -->
+        <title>Privacy Policy - DEATHWINGS</title>
+        <meta name="description" content="How DEATHWINGS collects, uses, and protects your personal information. UK GDPR compliant.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://wearedeathwings.com/privacy-policy.html">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://wearedeathwings.com/privacy-policy.html">
+        <meta property="og:title" content="Privacy Policy - DEATHWINGS">
+        <meta property="og:description" content="How DEATHWINGS collects, uses, and protects your personal information.">
+        <meta property="og:site_name" content="DEATHWINGS">
+        <meta property="og:image" content="https://wearedeathwings.com/social-share.jpg">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#39FF14">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Tailwind CSS -->
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <link href="custom.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav class="bg-black">
+            <div class="max-w-[1400px] mx-auto px-6 py-4">
+                <!-- Desktop & Mobile Header -->
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <a href="/" class="transition-opacity hover:opacity-80"> <img src="assets/images/logo.svg" alt="Deathwings" class="h-[40px] md:h-[48px] w-auto"> </a>
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="hidden md:flex gap-4 md:gap-8 items-center">
+                        <a href="/" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <!-- CATALOG DROPDOWN (Desktop) -->
+                        <div class="relative group">
+                            <a href="/catalog.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
+                        CATALOG <span class="text-[10px]">▼</span> </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute left-0 top-full mt-2 bg-black border-2 border-neon-green opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+                                <a href="/faceless.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors border-b border-neon-green/30">
+                            THE FACELESS </a>
+                                <a href="/unleashed.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors">
+                            THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
+                    </div>
+                    <!-- Mobile Menu Button (visible on mobile only) -->
+                    <button id="mobile-menu-button" class="md:hidden text-neon-green hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Navigation Menu (hidden by default) -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="/" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    HOME </a>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ABOUT </a>
+                        <!-- Mobile Catalog -->
+                        <div>
+                            <a href="/catalog.html" class="block font-courier uppercase text-white text-[14px] tracking-wider hover:text-white transition-colors">
+    CATALOG </a>
+                            <button id="mobile-catalog-button" class="mt-2 font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors flex items-center gap-2 w-full text-left">
+                                VIEW PRODUCTS
+                                <span class="text-[10px]">▼</span>
+                            </button>
+                            <!-- Mobile Submenu -->
+                            <div id="mobile-catalog-submenu" class="hidden ml-4 mt-2 space-y-2 border-l-2 border-neon-green pl-4">
+                                <a href="/faceless.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE FACELESS </a>
+                                <a href="/unleashed.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <a href="/order.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ORDER </a>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    CONTACT </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- MAIN CONTENT -->
+        <main class="max-w-[900px] mx-auto px-6 py-16 md:py-24">
+            <article class="bg-white p-8 md:p-16 shadow-sm">
+                <header class="mb-12 border-b-2 border-gray-200 pb-8">
+                    <p class="font-courier uppercase text-[10px] tracking-widest text-gray-500 mb-4">
+                    DEATHWINGS // LEGAL </p>
+                    <h1 class="font-anton uppercase text-[48px] md:text-[56px] leading-[0.9] text-black mb-4">
+                    PRIVACY<br>POLICY </h1>
+                    <p class="font-courier text-[12px] text-gray-600">
+                    Last updated: 5 February 2026 </p>
+                </header>
+                <div class="space-y-10 font-inter text-gray-800 leading-relaxed">
+                    <!-- 1. Introduction -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">1. INTRODUCTION</h2>
+                        <p class="mb-4 text-[15px]">
+                        This Privacy Policy explains how Definitive Ventures Group, trading as Deathwings ("we", "us", "our") collects, uses, and protects your personal information when you use our website (wearedeathwings.com) or purchase our products. </p>
+                        <p class="mb-6 text-[15px]">
+                        We are committed to protecting your privacy and complying with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. </p>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[14px]">
+                            <p class="font-semibold mb-2 text-black">Data Controller:</p>
+                            <p class="mb-1">Definitive Ventures Group</p>
+                            <p class="mb-1">43 Lyndhurst Drive</p>
+                            <p class="mb-1">Kidderminster</p>
+                            <p class="mb-1">Worcestershire</p>
+                            <p class="mb-1">DY10 2PT</p>
+                            <p class="mb-3">United Kingdom</p>
+                            <p><span class="font-semibold text-black">Contact email:</span> hello@wearedeathwings.com</p>
+                        </div>
+                    </section>
+                    <!-- 2. Information We Collect -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">2. INFORMATION WE COLLECT</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">2.1 Information You Provide</h3>
+                        <p class="mb-3 text-[15px]">When you place an order or sign up for our mailing list, we collect:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>
+                                <span class="font-semibold text-black">Name</span> (for order fulfillment and communication)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Email address</span> (for order confirmations, shipping updates, and marketing if you consent)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Shipping address</span> (for product delivery)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Billing address</span> (for payment processing)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Phone number</span> (optional, for delivery purposes)
+                            </li>
+                        </ul>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">2.2 Information Collected Automatically</h3>
+                        <p class="mb-3 text-[15px]">When you visit our website, our e-commerce platform (Shopify) may automatically collect:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>
+                                <span class="font-semibold text-black">Device information</span> (browser type, operating system)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">IP address</span> (for fraud prevention and security)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Pages visited</span> (to improve website performance)
+                            </li>
+                        </ul>
+                        <p class="mb-6 text-[15px]">We do not currently use cookies or third-party analytics tools on our website.</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">2.3 Payment Information</h3>
+                        <p class="text-[15px]">
+                        Payment information (credit/debit card details) is processed securely by Shopify Payments. We never see or store your full payment card details. Shopify is PCI-DSS compliant and handles all payment data securely. </p>
+                    </section>
+                    <!-- 3. How We Use Your Information -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">3. HOW WE USE YOUR INFORMATION</h2>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">3.1 Order Fulfillment</h3>
+                        <ul class="list-disc list-inside mb-3 space-y-2 text-[15px] ml-4">
+                            <li>Processing and shipping your orders</li>
+                            <li>Sending order confirmations and shipping updates</li>
+                            <li>Managing returns and refunds</li>
+                            <li>Customer service and support</li>
+                        </ul>
+                        <p class="mb-6 text-[13px] italic text-gray-600">Legal basis: Performance of a contract</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">3.2 Marketing Communications</h3>
+                        <ul class="list-disc list-inside mb-3 space-y-2 text-[15px] ml-4">
+                            <li>Sending promotional emails about new products, offers, and brand news (only if you have consented)</li>
+                            <li>You can unsubscribe from marketing emails at any time by clicking "unsubscribe" in any email or contacting us</li>
+                        </ul>
+                        <p class="mb-6 text-[13px] italic text-gray-600">Legal basis: Consent (which you can withdraw at any time)</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">3.3 Legal Obligations</h3>
+                        <ul class="list-disc list-inside mb-3 space-y-2 text-[15px] ml-4">
+                            <li>Complying with legal requirements (e.g., tax, accounting)</li>
+                            <li>Fraud prevention and security</li>
+                        </ul>
+                        <p class="text-[13px] italic text-gray-600">Legal basis: Legal obligation and legitimate interests</p>
+                    </section>
+                    <!-- 4. How We Share Your Information -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">4. HOW WE SHARE YOUR INFORMATION</h2>
+                        <p class="mb-6 text-[15px]">We only share your personal information with trusted third parties necessary to operate our business:</p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.1 Shopify (E-commerce Platform)</h3>
+                        <p class="mb-6 text-[15px]">
+                        Our online store is hosted on Shopify Inc. Shopify stores your data on secure servers and processes payments. Read Shopify's Privacy Policy: <a href="https://www.shopify.com/legal/privacy" class="text-neon-green underline hover:text-black transition-colors">shopify.com/legal/privacy</a> </p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.2 Shipping Partners</h3>
+                        <p class="mb-6 text-[15px]">
+                        We share your name and shipping address with delivery companies (e.g., Royal Mail) to fulfill your order. </p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.3 Email Service Provider</h3>
+                        <p class="mb-6 text-[15px]">
+                        We use Zoho Mail to send transactional and marketing emails. Zoho processes your email address in accordance with their privacy policy. </p>
+                        <h3 class="font-semibold text-[17px] text-black mb-3">4.4 Payment Processors</h3>
+                        <p class="mb-6 text-[15px]">
+                        Shopify Payments processes your payment information securely. We do not have access to your full payment card details. </p>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[15px]">
+                            <p class="font-semibold text-black">We never sell your personal information to third parties.</p>
+                        </div>
+                    </section>
+                    <!-- 5. Data Retention -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">5. DATA RETENTION</h2>
+                        <p class="mb-4 text-[15px]">We retain your personal information for as long as necessary to fulfill the purposes outlined in this policy:</p>
+                        <ul class="list-disc list-inside space-y-2 text-[15px] ml-4">
+                            <li>
+                                <span class="font-semibold text-black">Order information:</span> 7 years (UK tax and accounting requirements)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Marketing consent:</span> Until you unsubscribe or request deletion
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Account information:</span> Until you request deletion
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- 6. Your Rights -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">6. YOUR RIGHTS (UK GDPR)</h2>
+                        <p class="mb-4 text-[15px]">Under UK GDPR, you have the following rights:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>
+                                <span class="font-semibold text-black">Right of access:</span> Request a copy of your personal data
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Right to rectification:</span> Correct inaccurate or incomplete data
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Right to erasure:</span> Request deletion of your data (subject to legal obligations)
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Right to restrict processing:</span> Limit how we use your data
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Right to data portability:</span> Receive your data in a portable format
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Right to object:</span> Object to processing based on legitimate interests
+                            </li>
+                            <li>
+                                <span class="font-semibold text-black">Right to withdraw consent:</span> Withdraw marketing consent at any time
+                            </li>
+                        </ul>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[14px]">
+                            <p class="mb-2"><span class="font-semibold text-black">To exercise any of these rights, contact us at:</span> hello@wearedeathwings.com</p>
+                            <p>We will respond to your request within one month.</p>
+                        </div>
+                    </section>
+                    <!-- 7. Data Security -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">7. DATA SECURITY</h2>
+                        <p class="mb-4 text-[15px]">We take reasonable measures to protect your personal information from unauthorized access, loss, or misuse:</p>
+                        <ul class="list-disc list-inside mb-6 space-y-2 text-[15px] ml-4">
+                            <li>Secure hosting on Shopify's encrypted servers</li>
+                            <li>SSL/TLS encryption for data transmission</li>
+                            <li>Secure email communication via Zoho</li>
+                            <li>Limited access to personal data (only authorized personnel)</li>
+                        </ul>
+                        <p class="text-[15px]">
+                        However, no method of transmission over the internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security. </p>
+                    </section>
+                    <!-- 8-12: Remaining Sections -->
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">8. INTERNATIONAL TRANSFERS</h2>
+                        <p class="text-[15px]">
+                        Our e-commerce platform (Shopify) and email provider (Zoho) may store data on servers located outside the UK/EU. When this occurs, we ensure appropriate safeguards are in place (such as Standard Contractual Clauses) to protect your data in accordance with UK GDPR. </p>
+                    </section>
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">9. CHILDREN'S PRIVACY</h2>
+                        <p class="text-[15px]">
+                        Our products are not intended for children under 16. We do not knowingly collect personal information from children under 16. If you believe we have collected information from a child under 16, please contact us immediately. </p>
+                    </section>
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">10. CHANGES TO THIS POLICY</h2>
+                        <p class="text-[15px]">
+                        We may update this Privacy Policy from time to time. The "Last updated" date at the top will reflect the most recent changes. Continued use of our website or services after changes constitutes acceptance of the updated policy. </p>
+                    </section>
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">11. COMPLAINTS</h2>
+                        <p class="mb-4 text-[15px]">
+                        If you have concerns about how we handle your personal data, you have the right to lodge a complaint with the UK Information Commissioner's Office (ICO): </p>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[14px]">
+                            <p class="mb-2"><span class="font-semibold text-black">ICO Website:</span> <a href="https://ico.org.uk" class="text-neon-green underline hover:text-black transition-colors">ico.org.uk</a></p>
+                            <p><span class="font-semibold text-black">ICO Helpline:</span> 0303 123 1113</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="font-anton uppercase text-[24px] text-black mb-4">12. CONTACT US</h2>
+                        <p class="mb-4 text-[15px]">If you have any questions about this Privacy Policy or how we handle your data, please contact us:</p>
+                        <div class="bg-gray-50 border-l-4 border-neon-green p-6 text-[14px]">
+                            <p class="mb-2"><span class="font-semibold text-black">Email:</span> hello@wearedeathwings.com</p>
+                            <p class="mb-1"><span class="font-semibold text-black">Address:</span></p>
+                            <p class="ml-4 mb-1">Definitive Ventures Group</p>
+                            <p class="ml-4 mb-1">43 Lyndhurst Drive</p>
+                            <p class="ml-4 mb-1">Kidderminster</p>
+                            <p class="ml-4 mb-1">Worcestershire</p>
+                            <p class="ml-4 mb-1">DY10 2PT</p>
+                            <p class="ml-4">United Kingdom</p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <!-- FOOTER -->
+        <footer class="w-full bg-[#1a1a1a] py-8 px-4 border-t border-gray-800">
+            <div class="max-w-[1190px] mx-auto text-center space-y-4">
+                <div class="mb-6">
+                    <p class="font-courier text-gray-500 text-[11px] uppercase tracking-widest">
+        Published by Deathwings </p>
+                    <p class="font-courier text-gray-600 text-[10px] uppercase tracking-wider mt-1">
+        Issue 01 // February 2026 </p>
+                </div>
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.instagram.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Instagram </a>
+                    <a href="https://www.facebook.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Facebook </a>
+                    <a href="https://x.com/wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        X </a>
+                    <a href="https://www.tiktok.com/@wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        TikTok </a>
+                </div>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="/privacy-policy.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Privacy Policy</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/terms-and-conditions.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Terms of Service</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/returns-and-refunds.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Returns</a>
+                </div>
+                <div>
+                    <p class="font-inter text-gray-600 text-[10px] md:text-[11px] tracking-wide">
+        © 2026 DEATHWINGS. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Mobile Menu JavaScript (complete) -->
+        <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileCatalogButton = document.getElementById('mobile-catalog-button');
+  const mobileCatalogSubmenu = document.getElementById('mobile-catalog-submenu');
+
+  function closeMobileMenu() {
+    if (mobileMenu) mobileMenu.classList.add('hidden');
+    if (mobileCatalogSubmenu) mobileCatalogSubmenu.classList.add('hidden');
+  }
+
+  // Toggle main mobile menu
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      const willOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+
+      // If closing the main menu, also close the submenu
+      if (!willOpen) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Toggle catalog submenu on mobile
+  if (mobileCatalogButton && mobileCatalogSubmenu) {
+    mobileCatalogButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Only toggle submenu if main menu is open
+      if (mobileMenu && mobileMenu.classList.contains('hidden')) return;
+
+      mobileCatalogSubmenu.classList.toggle('hidden');
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenuButton || !mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) return;
+
+    const isClickInside =
+      mobileMenuButton.contains(event.target) ||
+      mobileMenu.contains(event.target);
+
+    if (!isClickInside) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu after clicking any mobile nav link
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+</script>
+    </body>
+</html>

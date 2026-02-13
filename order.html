@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO Meta Tags -->
+        <title>Order - DEATHWINGS Issue 01</title>
+        <meta name="description" content="Pre-order DEATHWINGS Issue 01. Founding edition ships after February 14, 2026.">
+        <meta name="robots" content="noindex, follow">
+        <link rel="canonical" href="https://wearedeathwings.com/order.html">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <meta name="theme-color" content="#39FF14">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <style>body { font-family: 'Inter', sans-serif; background: #f5f5f0; } /* Custom checkbox styling */.product-checkbox { width: 20px; height: 20px; cursor: pointer; accent-color: #39FF14; } /* Disabled state for selects */select:disabled { opacity: 0.4; cursor: not-allowed; } /* Quantity button styling */.qty-btn { width: 32px; height: 32px; border: 2px solid #d1d5db; background: white; font-family: 'Courier Prime', monospace; font-size: 18px; font-weight: bold; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; } .qty-btn:hover:not(:disabled) { border-color: #39FF14; background: #f9f9f9; } .qty-btn:disabled { opacity: 0.3; cursor: not-allowed; } .qty-display { width: 48px; text-align: center; font-family: 'Courier Prime', monospace; font-size: 16px; font-weight: bold; } /* Add size button */.add-size-btn { font-family: 'Courier Prime', monospace; font-size: 12px; text-transform: uppercase; color: #39FF14; background: transparent; border: 1px dashed #39FF14; padding: 6px 12px; cursor: pointer; transition: all 0.2s; } .add-size-btn:hover { background: #39FF14; color: black; border-style: solid; } /* Remove row button */.remove-row-btn { font-family: 'Courier Prime', monospace; font-size: 11px; color: #ef4444; background: transparent; border: none; cursor: pointer; text-decoration: underline; } .remove-row-btn:hover { color: #dc2626; }</style>
+        <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <link href="custom.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <nav class="bg-black">
+            <div class="max-w-[1400px] mx-auto px-6 py-4">
+                <!-- Desktop & Mobile Header -->
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <a href="/" class="transition-opacity hover:opacity-80"> <img src="assets/images/logo.svg" alt="Deathwings" class="h-[40px] md:h-[48px] w-auto"> </a>
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="hidden md:flex gap-4 md:gap-8 items-center">
+                        <a href="/" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">HOME</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ABOUT</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <!-- CATALOG DROPDOWN (Desktop) -->
+                        <div class="relative group">
+                            <a href="/catalog.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-white transition-colors flex items-center gap-1">
+                        CATALOG <span class="text-[10px]">▼</span> </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute left-0 top-full mt-2 bg-black border-2 border-neon-green opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+                                <a href="/faceless.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors border-b border-neon-green/30">
+                            THE FACELESS </a>
+                                <a href="/unleashed.html" class="block px-4 py-3 font-courier uppercase text-white text-[11px] tracking-wider hover:bg-neon-green hover:text-black transition-colors">
+                            THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/order.html" class="font-courier uppercase text-neon-green text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">ORDER</a>
+                        <span class="text-white/30 text-[12px] md:text-[14px]">//</span>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[12px] md:text-[14px] tracking-wider hover:text-neon-green transition-colors">CONTACT</a>
+                    </div>
+                    <!-- Mobile Menu Button (visible on mobile only) -->
+                    <button id="mobile-menu-button" class="md:hidden text-neon-green hover:text-white transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Navigation Menu (hidden by default) -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-800">
+                    <div class="flex flex-col space-y-4 pt-4">
+                        <a href="/" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    HOME </a>
+                        <a href="/about.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ABOUT </a>
+                        <!-- Mobile Catalog -->
+                        <div>
+                            <a href="/catalog.html" class="block font-courier uppercase text-white text-[14px] tracking-wider hover:text-white transition-colors">
+    CATALOG </a>
+                            <button id="mobile-catalog-button" class="mt-2 font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors flex items-center gap-2 w-full text-left">
+                                VIEW PRODUCTS
+                                <span class="text-[10px]">▼</span>
+                            </button>
+                            <!-- Mobile Submenu -->
+                            <div id="mobile-catalog-submenu" class="hidden ml-4 mt-2 space-y-2 border-l-2 border-neon-green pl-4">
+                                <a href="/faceless.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE FACELESS </a>
+                                <a href="/unleashed.html" class="block font-courier uppercase text-white text-[12px] tracking-wider hover:text-neon-green transition-colors">
+      THE UNLEASHED </a>
+                            </div>
+                        </div>
+                        <a href="/order.html" class="font-courier uppercase text-neon-green text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    ORDER </a>
+                        <a href="/contact.html" class="font-courier uppercase text-white text-[14px] tracking-wider hover:text-neon-green transition-colors">
+                    CONTACT </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- MAIN CONTENT -->
+        <main class="max-w-[900px] mx-auto px-6 py-16 md:py-24">
+            <div class="bg-white p-8 md:p-16 shadow-sm">
+                <!-- HEADER -->
+                <header class="mb-12 border-b-2 border-gray-200 pb-8">
+                    <p class="font-courier uppercase text-[10px] tracking-widest text-gray-500 mb-4">
+                    DEATHWINGS // ISSUE 01 </p>
+                    <h1 class="font-anton uppercase text-[48px] md:text-[64px] leading-[0.9] text-black mb-6">
+                    ORDER FORM </h1>
+                    <div class="font-inter text-[14px] text-gray-700 space-y-2">
+                        <p class="font-semibold">Founding pre-order.</p>
+                        <p>Orders ship after February 14, 2026.</p>
+                    </div>
+                </header>
+                <!-- ORDER FORM -->
+                <form id="orderForm" class="space-y-12">
+                    <!-- SECTION 1: PREMIUM TEES -->
+                    <section class="border-t-2 border-neon-green pt-8">
+                        <h2 class="font-anton uppercase text-[24px] md:text-[32px] text-black mb-8">
+                        PREMIUM TEES </h2>
+                        <div class="space-y-8">
+                            <!-- THE FACELESS TEE -->
+                            <div class="border-b border-gray-200 pb-6">
+                                <div class="flex items-start gap-4 mb-4">
+                                    <input type="checkbox" id="tee-faceless" class="product-checkbox mt-1" data-price="22" data-variants='{"S":"63095963615581","M":"63095963648349","L":"63095963681117","XL":"63095963713885","XXL":"63095963746653","XXXL":"63095963779421"}' onchange="toggleProduct('tee-faceless')">
+                                    <div class="flex-1">
+                                        <label for="tee-faceless" class="font-courier uppercase text-[14px] md:text-[16px] text-black font-bold cursor-pointer">
+                                            THE FACELESS — PREMIUM TEE
+</label>
+                                        <p class="font-inter text-[13px] text-gray-600 mt-1">Black</p>
+                                    </div>
+                                    <p class="font-courier text-[16px] font-bold">&pound;22</p>
+                                </div>
+                                <div id="tee-faceless-options" class="ml-8 space-y-3" style="display: none;">
+                                    <!-- Size rows will be added here dynamically -->
+                                </div>
+                            </div>
+                            <!-- THE UNLEASHED TEE -->
+                            <div class="border-b border-gray-200 pb-6">
+                                <div class="flex items-start gap-4 mb-4">
+                                    <input type="checkbox" id="tee-unleashed" class="product-checkbox mt-1" data-price="24" data-variants='{"S":"63095815635293","M":"63095815668061","L":"63095815700829","XL":"63095815733597","XXL":"63095815766365","XXXL":"63095815799133"}' onchange="toggleProduct('tee-unleashed')">
+                                    <div class="flex-1">
+                                        <label for="tee-unleashed" class="font-courier uppercase text-[14px] md:text-[16px] text-black font-bold cursor-pointer">
+                                            THE UNLEASHED — PREMIUM TEE
+</label>
+                                        <p class="font-inter text-[13px] text-gray-600 mt-1">Black</p>
+                                    </div>
+                                    <p class="font-courier text-[16px] font-bold">&pound;24</p>
+                                </div>
+                                <div id="tee-unleashed-options" class="ml-8 space-y-3" style="display: none;">
+                                    <!-- Size rows will be added here dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="border-t-2 border-neon-green pt-8">
+                        <h2 class="font-anton uppercase text-[24px] md:text-[32px] text-black mb-8">
+    STICKERS </h2>
+                        <div class="space-y-4">
+                            <!-- THE FACELESS STICKER -->
+                            <div class="border-b border-gray-200 pb-4">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <input type="checkbox" id="sticker-faceless" class="product-checkbox" data-price="1.50" data-variant="63095775887709" onchange="toggleProduct('sticker-faceless')">
+                                    <label for="sticker-faceless" class="flex-1 font-courier uppercase text-[14px] text-black cursor-pointer">
+                                        THE FACELESS STICKER
+</label>
+                                    <p class="font-courier text-[16px] font-bold">£1.50</p>
+                                </div>
+                                <div id="sticker-faceless-options" class="ml-8" style="display:none;">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-courier text-[13px] uppercase text-gray-700">Qty:</span>
+                                        <button type="button" class="qty-btn" onclick="decrementQty('sticker-faceless', 0)">−</button>
+                                        <span id="sticker-faceless-qty-0" class="qty-display">1</span>
+                                        <button type="button" class="qty-btn" onclick="incrementQty('sticker-faceless', 0)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- THE UNLEASHED STICKER -->
+                            <div class="border-b border-gray-200 pb-4">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <input type="checkbox" id="sticker-unleashed" class="product-checkbox" data-price="1.50" data-variant="63095797809501" onchange="toggleProduct('sticker-unleashed')">
+                                    <label for="sticker-unleashed" class="flex-1 font-courier uppercase text-[14px] text-black cursor-pointer">
+                                        THE UNLEASHED STICKER
+</label>
+                                    <p class="font-courier text-[16px] font-bold">£1.50</p>
+                                </div>
+                                <div id="sticker-unleashed-options" class="ml-8" style="display:none;">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-courier text-[13px] uppercase text-gray-700">Qty:</span>
+                                        <button type="button" class="qty-btn" onclick="decrementQty('sticker-unleashed', 0)">−</button>
+                                        <span id="sticker-unleashed-qty-0" class="qty-display">1</span>
+                                        <button type="button" class="qty-btn" onclick="incrementQty('sticker-unleashed', 0)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SIGIL STICKER -->
+                            <div class="border-b border-gray-200 pb-4">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <input type="checkbox" id="sticker-sigil" class="product-checkbox" data-price="1.50" data-variant="63095804559709" onchange="toggleProduct('sticker-sigil')">
+                                    <label for="sticker-sigil" class="flex-1 font-courier uppercase text-[14px] text-black cursor-pointer">
+                                        SIGIL STICKER
+</label>
+                                    <p class="font-courier text-[16px] font-bold">£1.50</p>
+                                </div>
+                                <div id="sticker-sigil-options" class="ml-8" style="display:none;">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-courier text-[13px] uppercase text-gray-700">Qty:</span>
+                                        <button type="button" class="qty-btn" onclick="decrementQty('sticker-sigil', 0)">−</button>
+                                        <span id="sticker-sigil-qty-0" class="qty-display">1</span>
+                                        <button type="button" class="qty-btn" onclick="incrementQty('sticker-sigil', 0)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MASCOT STICKER -->
+                            <div class="border-b border-gray-200 pb-4">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <input type="checkbox" id="sticker-mascot" class="product-checkbox" data-price="1.50" data-variant="63095808033117" onchange="toggleProduct('sticker-mascot')">
+                                    <label for="sticker-mascot" class="flex-1 font-courier uppercase text-[14px] text-black cursor-pointer">
+                                        MASCOT STICKER
+</label>
+                                    <p class="font-courier text-[16px] font-bold">£1.50</p>
+                                </div>
+                                <div id="sticker-mascot-options" class="ml-8" style="display:none;">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-courier text-[13px] uppercase text-gray-700">Qty:</span>
+                                        <button type="button" class="qty-btn" onclick="decrementQty('sticker-mascot', 0)">−</button>
+                                        <span id="sticker-mascot-qty-0" class="qty-display">1</span>
+                                        <button type="button" class="qty-btn" onclick="incrementQty('sticker-mascot', 0)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4-STICKER SET -->
+                            <div class="pt-4 border-t border-gray-200">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <input type="checkbox" id="sticker-set" class="product-checkbox" data-price="5" data-variant="63095997858141" onchange="toggleProduct('sticker-set')">
+                                    <label for="sticker-set" class="flex-1 font-courier uppercase text-[14px] text-black cursor-pointer">
+                                        4-STICKER SET (SAVE £1)
+</label>
+                                    <p class="font-courier text-[16px] font-bold">£5</p>
+                                </div>
+                                <div id="sticker-set-options" class="ml-8" style="display:none;">
+                                    <div class="flex items-center gap-3">
+                                        <span class="font-courier text-[13px] uppercase text-gray-700">Qty:</span>
+                                        <button type="button" class="qty-btn" onclick="decrementQty('sticker-set', 0)">−</button>
+                                        <span id="sticker-set-qty-0" class="qty-display">1</span>
+                                        <button type="button" class="qty-btn" onclick="incrementQty('sticker-set', 0)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SECTION: BUNDLES -->
+                    <section class="border-t-2 border-neon-green pt-8">
+                        <h2 class="font-anton uppercase text-[24px] md:text-[32px] text-black mb-8">
+    BUNDLES </h2>
+                        <p class="font-inter text-[13px] text-gray-600 mb-6">Save when you bundle tee + sticker</p>
+                        <div class="space-y-8">
+                            <!-- FACELESS BUNDLE -->
+                            <div class="border-b border-gray-200 pb-6">
+                                <div class="flex items-start gap-4 mb-4">
+                                    <input type="checkbox" id="bundle-faceless" class="product-checkbox mt-1" data-price="22.50" data-variants='{"S":"63095941988701","M":"63095942054237","L":"63095942021469","XL":"63095942087005","XXL":"63095942119773","XXXL":"63095942152541"}' onchange="toggleProduct('bundle-faceless')">
+                                    <div class="flex-1">
+                                        <label for="bundle-faceless" class="font-courier uppercase text-[14px] md:text-[16px] text-black font-bold cursor-pointer">
+                                            THE FACELESS BUNDLE
+</label>
+                                        <p class="font-inter text-[13px] text-gray-600 mt-1">Tee + Sticker (Save £1)</p>
+                                    </div>
+                                    <p class="font-courier text-[16px] font-bold">£22.50</p>
+                                </div>
+                                <div id="bundle-faceless-options" class="ml-8 space-y-3" style="display: none;">
+                                    <!-- Size rows will be added here dynamically -->
+                                </div>
+                            </div>
+                            <!-- UNLEASHED BUNDLE -->
+                            <div class="border-b border-gray-200 pb-6">
+                                <div class="flex items-start gap-4 mb-4">
+                                    <input type="checkbox" id="bundle-unleashed" class="product-checkbox mt-1" data-price="24.50" data-variants='{"S":"63095995335005","M":"63095995367773","L":"63095995400541","XL":"63095995433309","XXL":"63095995466077","XXXL":"63095995498845"}' onchange="toggleProduct('bundle-unleashed')">
+                                    <div class="flex-1">
+                                        <label for="bundle-unleashed" class="font-courier uppercase text-[14px] md:text-[16px] text-black font-bold cursor-pointer">
+                                            THE UNLEASHED BUNDLE
+</label>
+                                        <p class="font-inter text-[13px] text-gray-600 mt-1">Tee + Sticker (Save £1)</p>
+                                    </div>
+                                    <p class="font-courier text-[16px] font-bold">£24.50</p>
+                                </div>
+                                <div id="bundle-unleashed-options" class="ml-8 space-y-3" style="display: none;">
+                                    <!-- Size rows will be added here dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SECTION 3: ORDER SUMMARY -->
+                    <section class="border-t-2 border-neon-green pt-8">
+                        <h2 class="font-anton uppercase text-[24px] md:text-[32px] text-black mb-6">
+                        ORDER SUMMARY </h2>
+                        <div class="space-y-3 font-inter text-[15px]">
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Items:</span>
+                                <span id="item-count" class="font-bold">0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Subtotal:</span>
+                                <span id="subtotal" class="font-bold text-[18px]">£0</span>
+                            </div>
+                            <div class="flex justify-between text-[13px] text-gray-600">
+                                <span>Shipping:</span>
+                                <span>Calculated at checkout</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- PLACE ORDER BUTTON -->
+                    <div class="border-t-2 border-neon-green pt-8 text-center">
+                        <button type="button" onclick="placeOrder()" class="bg-neon-green text-black font-anton uppercase text-[20px] md:text-[24px] px-12 py-5 border-4 border-neon-green hover:bg-black hover:text-neon-green transition-colors duration-200 w-full md:w-auto">
+                            PLACE PRE-ORDER
+</button>
+                        <div class="mt-6 font-inter text-[13px] text-gray-600 space-y-1">
+                            <p class="mb-3">
+    You'll receive an order confirmation by email. </p>
+                            <p class="mb-3">
+    This is a pre-order. Production begins after the pre-order window closes on March 17th, 2026. </p>
+                            <p>
+    Estimated shipping: late March 2026. </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="w-full bg-[#1a1a1a] py-8 px-4 border-t border-gray-800">
+            <div class="max-w-[1190px] mx-auto text-center space-y-4">
+                <div class="mb-6">
+                    <p class="font-courier text-gray-500 text-[11px] uppercase tracking-widest">
+        Published by Deathwings </p>
+                    <p class="font-courier text-gray-600 text-[10px] uppercase tracking-wider mt-1">
+        Issue 01 // February 2026 </p>
+                </div>
+                <div class="flex justify-center gap-6 flex-wrap">
+                    <a href="https://www.instagram.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Instagram </a>
+                    <a href="https://www.facebook.com/wearedeathwings/" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        Facebook </a>
+                    <a href="https://x.com/wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        X </a>
+                    <a href="https://www.tiktok.com/@wearedeathwings" target="_blank" rel="noopener noreferrer" class="font-inter text-gray-400 hover:text-neon-green transition-colors text-[12px] md:text-[13px] uppercase tracking-wide">
+        TikTok </a>
+                </div>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="/privacy-policy.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Privacy Policy</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/terms-and-conditions.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Terms of Service</a>
+                    <span class="text-gray-600 text-[11px]">•</span>
+                    <a href="/returns-and-refunds.html" class="font-inter text-gray-500 hover:text-gray-300 transition-colors text-[11px] md:text-[12px] uppercase tracking-wide">Returns</a>
+                </div>
+                <div>
+                    <p class="font-inter text-gray-600 text-[10px] md:text-[11px] tracking-wide">
+        © 2026 DEATHWINGS. ALL RIGHTS RESERVED. </p>
+                </div>
+            </div>
+        </footer>
+        <!-- JAVASCRIPT -->
+        <!-- Mobile Menu JavaScript (complete) -->
+        <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileCatalogButton = document.getElementById('mobile-catalog-button');
+  const mobileCatalogSubmenu = document.getElementById('mobile-catalog-submenu');
+
+  function closeMobileMenu() {
+    if (mobileMenu) mobileMenu.classList.add('hidden');
+    if (mobileCatalogSubmenu) mobileCatalogSubmenu.classList.add('hidden');
+  }
+
+  // Toggle main mobile menu
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      const willOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+
+      // If closing the main menu, also close the submenu
+      if (!willOpen) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Toggle catalog submenu on mobile
+  if (mobileCatalogButton && mobileCatalogSubmenu) {
+    mobileCatalogButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Only toggle submenu if main menu is open
+      if (mobileMenu && mobileMenu.classList.contains('hidden')) return;
+
+      mobileCatalogSubmenu.classList.toggle('hidden');
+    });
+  }
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenuButton || !mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) return;
+
+    const isClickInside =
+      mobileMenuButton.contains(event.target) ||
+      mobileMenu.contains(event.target);
+
+    if (!isClickInside) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu after clicking any mobile nav link
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+  }
+</script>
+        <script>
+        // Product state management
+        const productState = {};
+        
+        // Toggle product visibility
+        function toggleProduct(productId) {
+            const checkbox = document.getElementById(productId);
+            const options = document.getElementById(productId + '-options');
+            
+            if (checkbox.checked) {
+                options.style.display = 'block';
+                
+                // For apparel products (tees/bundles), add first size row
+                if (productId.startsWith('tee-') || productId.startsWith('bundle-')) {
+                    if (!productState[productId]) {
+                        productState[productId] = [];
+                    }
+                    if (productState[productId].length === 0) {
+                        addSizeRow(productId);
+                    }
+                }
+            } else {
+                options.style.display = 'none';
+                // Clear product state when unchecked
+                productState[productId] = [];
+                options.innerHTML = '';
+            }
+            
+            updateOrderSummary();
+        }
+        
+        // Add a size row for apparel products
+        function addSizeRow(productId) {
+            const options = document.getElementById(productId + '-options');
+            const checkbox = document.getElementById(productId);
+            const variants = JSON.parse(checkbox.dataset.variants);
+            
+            if (!productState[productId]) {
+                productState[productId] = [];
+            }
+            
+            const rowIndex = productState[productId].length;
+            
+            // Max 5 size selections per product
+            if (rowIndex >= 5) {
+                alert('Maximum 5 size selections per product');
+                return;
+            }
+            
+            productState[productId].push({ size: '', qty: 1 });
+            
+            const row = document.createElement('div');
+            row.id = `${productId}-row-${rowIndex}`;
+            row.className = 'pb-3 border-b border-gray-100 space-y-2';
+            
+            // Build size options
+            let sizeOptions = '<option value="">Select Size</option>';
+            for (const [size, variantId] of Object.entries(variants)) {
+                sizeOptions += `<option value="${variantId}">${size}</option>`;
+            }
+            
+            row.innerHTML = `
+                <!-- Row 1: Size Selection -->
+                <div class="flex items-center gap-2">
+                    <label class="font-courier text-[11px] md:text-[13px] uppercase text-gray-700 w-12 md:w-16">Size:</label>
+                    <select id="${productId}-size-${rowIndex}" onchange="updateSize('${productId}', ${rowIndex}, this.value)" class="w-full max-w-xs border-2 border-gray-300 pl-2 pr-8 md:pl-3 md:pr-10 py-2 font-courier text-[11px] md:text-[13px] uppercase">
+                        ${sizeOptions}
+                    </select>
+                </div>
+                
+                <!-- Row 2: Quantity Controls -->
+                <div class="flex items-center gap-2">
+                    <label class="font-courier text-[11px] md:text-[13px] uppercase text-gray-700 w-12 md:w-16">Qty:</label>
+                    <button type="button" class="qty-btn text-[14px] md:text-[16px] px-3 md:px-4" onclick="decrementQty('${productId}', ${rowIndex})">−</button>
+                    <span id="${productId}-qty-${rowIndex}" class="qty-display text-[12px] md:text-[14px] min-w-[30px] text-center">1</span>
+                    <button type="button" class="qty-btn text-[14px] md:text-[16px] px-3 md:px-4" onclick="incrementQty('${productId}', ${rowIndex})">+</button>
+                    ${rowIndex > 0 ? `<button type="button" class="remove-row-btn ml-auto text-[11px] md:text-[13px]" onclick="removeSizeRow('${productId}', ${rowIndex})">Remove</button>` : ''}
+                </div>
+            `;
+            
+            options.appendChild(row);
+            
+            // Add "Add Another Size" button if it doesn't exist and we have room
+            let addBtn = document.getElementById(`${productId}-add-btn`);
+            if (!addBtn && rowIndex < 4) {
+                addBtn = document.createElement('button');
+                addBtn.id = `${productId}-add-btn`;
+                addBtn.type = 'button';
+                addBtn.className = 'add-size-btn mt-3';
+                addBtn.textContent = '+ Add Another Size';
+                addBtn.onclick = () => addSizeRow(productId);
+                options.appendChild(addBtn);
+            } else if (addBtn && rowIndex >= 4) {
+                addBtn.remove();
+            }
+        }
+        
+        // Remove a size row
+        function removeSizeRow(productId, rowIndex) {
+            const row = document.getElementById(`${productId}-row-${rowIndex}`);
+            row.remove();
+            
+            // Remove from state
+            productState[productId].splice(rowIndex, 1);
+            
+            // Re-index remaining rows
+            const options = document.getElementById(productId + '-options');
+            const rows = options.querySelectorAll('[id^="' + productId + '-row-"]');
+            rows.forEach((row, index) => {
+                row.id = `${productId}-row-${index}`;
+                // Update all IDs and onclick handlers in this row
+                row.innerHTML = row.innerHTML
+                    .replace(new RegExp(`${productId}-size-\\d+`, 'g'), `${productId}-size-${index}`)
+                    .replace(new RegExp(`${productId}-qty-\\d+`, 'g'), `${productId}-qty-${index}`)
+                    .replace(new RegExp(`'${productId}', \\d+`, 'g'), `'${productId}', ${index}`);
+            });
+            
+            // Show add button if we have room
+            const addBtn = document.getElementById(`${productId}-add-btn`);
+            if (productState[productId].length < 5 && !addBtn) {
+                const newAddBtn = document.createElement('button');
+                newAddBtn.id = `${productId}-add-btn`;
+                newAddBtn.type = 'button';
+                newAddBtn.className = 'add-size-btn mt-3';
+                newAddBtn.textContent = '+ Add Another Size';
+                newAddBtn.onclick = () => addSizeRow(productId);
+                options.appendChild(newAddBtn);
+            }
+            
+            updateOrderSummary();
+        }
+        
+        // Update size selection
+        function updateSize(productId, rowIndex, variantId) {
+            if (productState[productId] && productState[productId][rowIndex]) {
+                productState[productId][rowIndex].size = variantId;
+            }
+            updateOrderSummary();
+        }
+        
+        // Increment quantity
+        function incrementQty(productId, rowIndex) {
+            const qtyDisplay = document.getElementById(`${productId}-qty-${rowIndex}`);
+            let qty = parseInt(qtyDisplay.textContent);
+            
+            if (qty < 20) {
+                qty++;
+                qtyDisplay.textContent = qty;
+                
+                if (productState[productId] && productState[productId][rowIndex]) {
+                    productState[productId][rowIndex].qty = qty;
+                }
+                
+                updateOrderSummary();
+            }
+        }
+        
+        // Decrement quantity
+        function decrementQty(productId, rowIndex) {
+            const qtyDisplay = document.getElementById(`${productId}-qty-${rowIndex}`);
+            let qty = parseInt(qtyDisplay.textContent);
+            
+            if (qty > 1) {
+                qty--;
+                qtyDisplay.textContent = qty;
+                
+                if (productState[productId] && productState[productId][rowIndex]) {
+                    productState[productId][rowIndex].qty = qty;
+                }
+                
+                updateOrderSummary();
+            }
+        }
+        
+        // Update order summary
+        function updateOrderSummary() {
+            let totalItems = 0;
+            let subtotal = 0;
+            
+            // Check all checkboxes
+            document.querySelectorAll('.product-checkbox').forEach(checkbox => {
+                if (checkbox.checked) {
+                    const productId = checkbox.id;
+                    const price = parseFloat(checkbox.dataset.price);
+                    
+                    // For stickers (simple products with single quantity)
+                    if (productId.startsWith('sticker-')) {
+                        const qtyDisplay = document.getElementById(`${productId}-qty-0`);
+                        if (qtyDisplay) {
+                            const qty = parseInt(qtyDisplay.textContent);
+                            totalItems += qty;
+                            subtotal += price * qty;
+                        }
+                    }
+                    // For apparel (products with multiple size/qty combinations)
+                    else if (productState[productId]) {
+                        productState[productId].forEach(row => {
+                            if (row.size) { // Only count if size is selected
+                                totalItems += row.qty;
+                                subtotal += price * row.qty;
+                            }
+                        });
+                    }
+                }
+            });
+            
+            document.getElementById('item-count').textContent = totalItems;
+            document.getElementById('subtotal').textContent = '£' + subtotal.toFixed(2);
+        }
+        
+        // Place order - collect all items and redirect to Shopify cart
+        function placeOrder() {
+            const items = [];
+            let hasItems = false;
+            let missingSize = false;
+            
+            // Collect all selected products
+            document.querySelectorAll('.product-checkbox').forEach(checkbox => {
+                if (checkbox.checked) {
+                    const productId = checkbox.id;
+                    hasItems = true;
+                    
+                    // For stickers (simple products)
+                    if (productId.startsWith('sticker-')) {
+                        const variantId = checkbox.dataset.variant;
+                        const qtyDisplay = document.getElementById(`${productId}-qty-0`);
+                        const qty = qtyDisplay ? parseInt(qtyDisplay.textContent) : 1;
+                        items.push(`${variantId}:${qty}`);
+                    }
+                    // For apparel (products with multiple size/qty combinations)
+                    else if (productState[productId]) {
+                        productState[productId].forEach(row => {
+                            if (row.size) {
+                                items.push(`${row.size}:${row.qty}`);
+                            } else {
+                                missingSize = true;
+                            }
+                        });
+                        
+                        // Check if product is checked but no valid sizes selected
+                        if (productState[productId].length === 0 || productState[productId].every(row => !row.size)) {
+                            missingSize = true;
+                        }
+                    }
+                }
+            });
+            
+            // Validation
+            if (!hasItems) {
+                alert('Please select at least one item.');
+                return;
+            }
+            
+            if (missingSize) {
+                alert('Please select a size for all apparel items.');
+                return;
+            }
+            
+            // Build Shopify cart URL and redirect
+            const cartUrl = `https://wearedeathwings.myshopify.com/cart/${items.join(',')}`;
+            window.location.href = cartUrl;
+        }
+    </script>
+    </body>
+</html>

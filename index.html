@@ -1,71 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deathwings — Death To Fatigue</title>
-  <meta name="description" content="Deathwings — Death To Fatigue. Something is coming." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>We Are Deathwings — The Next Chapter Arrives Soon</title>
+<meta name="description" content="The next chapter arrives soon. Issue 001 from Deathwings.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="We Are Deathwings — The Next Chapter Arrives Soon">
+<meta property="og:description" content="Issue 001. The next chapter arrives soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wearedeathwings.com/">
+<!-- <meta property="og:image" content="https://wearedeathwings.com/og.jpg"> -->
 
-  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            death: {
-              black: '#000000',
-              white: '#f5f5f5',
-              soft: '#b8b8b8',
-              muted: '#aaaaaa',
-              faint: '#2a2a2a'
-            }
-          },
-          fontFamily: {
-            sans: ['Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+<style>
+  :root {
+    --bg: #000;
+    --ink: #f6f6f6;
+    --mute: #8c8c8c;
+    --rule: #2a2a2a;
+    --pad: clamp(20px, 3.2vw, 48px);
+    --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  }
 
-  <style>
-    body {
-      background: #000;
-    }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
 
-    .tracking-hero {
-      letter-spacing: 0.34em;
-    }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-stretch: 100%;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
 
-    .tracking-sub {
-      letter-spacing: 0.18em;
-    }
+  .cover {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding:
+      calc(var(--pad) + env(safe-area-inset-top, 0px))
+      calc(var(--pad) + 18px)
+      calc(var(--pad) + env(safe-area-inset-bottom, 0px))
+      var(--pad);
+    position: relative;
+  }
 
-    .tracking-email {
-      letter-spacing: 0.14em;
-    }
-  </style>
+  /* Page edges: a stack of fine lines down the right side, like the cut edge of a printed issue */
+  .cover::after {
+    content: "";
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 14px;
+    background: repeating-linear-gradient(
+      to right,
+      var(--ink) 0 1px,
+      transparent 1px 3.5px
+    );
+    opacity: .28;
+    pointer-events: none;
+  }
+
+  /* Masthead */
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+    font-size: clamp(14px, 1.25vw, 18px);
+    font-weight: 700;
+    letter-spacing: .01em;
+  }
+  .masthead .issue { font-weight: 400; color: var(--mute); font-variant-numeric: tabular-nums; }
+
+  /* The headline is the page */
+  .headline-wrap {
+    display: flex;
+    align-items: center;
+    padding: clamp(24px, 5vh, 64px) 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-family: var(--sans);
+    font-stretch: 62%;
+    font-weight: 850;
+    font-size: min(17.5vw, 27vh);
+    line-height: .84;
+    letter-spacing: -.012em;
+    word-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  h1 .line { display: block; overflow: hidden; padding-top: .04em; white-space: nowrap; }
+  h1 .line > span {
+    display: block;
+    transform: translateY(105%);
+    animation: rise .9s cubic-bezier(.2, .8, .2, 1) forwards;
+  }
+  h1 .line:nth-child(2) > span { animation-delay: .12s; }
+  h1 .line:nth-child(3) > span { animation-delay: .24s; }
+
+  @keyframes rise { to { transform: translateY(0); } }
+
+  /* Footer */
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-size: clamp(14px, 1.2vw, 17px);
+    color: var(--mute);
+  }
+  .foot a {
+    color: var(--ink);
+    text-decoration: none;
+    background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat;
+    padding-bottom: 2px;
+  }
+  .foot a:hover { background-size: 100% 2px; }
+  .foot a:focus-visible, .masthead a:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+  }
+
+  /* Narrow screens: stack the last line so the type can run bigger */
+  .break { display: inline; }
+  @media (max-width: 640px) {
+    h1 { font-size: min(21.5vw, 14vh); }
+    .break { display: block; }
+    .foot { flex-direction: column; gap: 8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    h1 .line > span { animation: none; transform: none; }
+  }
+</style>
 </head>
-<body class="min-h-screen bg-death-black text-death-white antialiased">
-  <main class="flex min-h-screen items-center justify-center px-6">
-    <section class="w-full max-w-xl text-center">
-      
-      <!-- Logo -->
-     <img
-  src="https://res.cloudinary.com/dragon-fire-design-studio/image/upload/f_auto,q_90/v1778792455/Deathwings/session-logo_r2apbi.png"
-  alt="Session logo"
-  class="mx-auto mb-10 w-[22rem] sm:w-[30rem] md:w-[38rem] lg:w-[46rem]"
-/>
-      <!-- Email -->
-      <a
-        href="mailto:hello@wearedeathwings.com"
-        class="tracking-email mt-16 inline-block border-b border-death-faint pb-1 text-[0.9rem] uppercase text-[#505050] transition duration-300 hover:text-death-soft hover:border-[#3a3a3a]"
-      >
-        hello@wearedeathwings.com
-      </a>
 
-    </section>
+<body>
+  <main class="cover">
+
+    <header class="masthead">
+      <span>We Are Deathwings</span>
+      <span class="issue">Issue 001</span>
+    </header>
+
+    <div class="headline-wrap">
+      <h1>
+        <span class="line"><span>The Next</span></span>
+        <span class="line"><span>Chapter</span></span>
+        <span class="line"><span>Arrives <span class="break"></span>Soon</span></span>
+      </h1>
+    </div>
+
+    <footer class="foot">
+      <a href="https://deathwingsapparel.com">Deathwings Apparel</a>
+      <a href="mailto:hello@wearedeathwings.com">hello@wearedeathwings.com</a>
+    </footer>
+
   </main>
 </body>
 </html>
